@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 
 import { useContext } from 'react'
 import AppContext from '@/context/AppContext'
+import Cube from '@/components/cube/cube'
 
 export default function Home() {
   const context = useContext(AppContext)
@@ -15,9 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <p>{context.state.y}</p>
-      </main>
+      <Cube/>
     </>
   )
 }
