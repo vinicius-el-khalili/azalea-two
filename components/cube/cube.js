@@ -29,7 +29,7 @@ const Cube = () => {
             <div className={`${style.cube__face} ${style.cube__face__bottom}`}  > bottom</div>
         </div>
     </div>
-    <button onClick={randomize}>ok</button>
+    <div className={style.switch} onClick={randomize}>Switch</div>
     </>
 )} 
 export default Cube;
