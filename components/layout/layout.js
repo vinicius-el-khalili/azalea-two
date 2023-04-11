@@ -19,6 +19,10 @@ const Layout = ({children}) => {
                 </div>
             </div>
 
+            <div className={style.pageContainer}>
+                {children}
+            </div>
+
         </div>
         
         </>

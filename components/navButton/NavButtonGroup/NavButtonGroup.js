@@ -5,7 +5,7 @@ const NavButtonCollection = () => {
         <>
 
         <NavButton title="Home" page="/" tag="Home" />
-        <NavButton title="Projects" page="/" tag="Projects" />
+        <NavButton title="Projects" page="/projects" tag="Projects" />
         <NavButton title="Blog" page="/" tag="Blog" />
         <NavButton title="CV" page="/" tag="CV" />
         <NavButton title="Technologies" page="/" tag="Technologies" />
