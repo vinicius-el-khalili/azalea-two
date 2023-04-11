@@ -10,6 +10,8 @@ $size: 250px;
 
 .cube {
   font-family: 'Press Start 2P', cursive;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
   width: 100%;
   height: 100%;
   position: relative;
@@ -23,14 +25,24 @@ $size: 250px;
   width: $size;
   height: $size;
   border: 20px solid rgba(0, 0, 0, 0.103);
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   text-align: center;
+  gap: 2rem;
   padding: 2rem;
   background: #ffffffef;
+  p{
+    &:nth-child(1){
+      font-size: 2rem;
+    }
+    &:nth-child(2){
+      font-size: 1rem;
+    }
+  }
 }
 
 .cube__face__front  { transform: rotateY(  0deg) translateZ($size/2); }
@@ -40,7 +52,7 @@ $size: 250px;
 .cube__face__top    { transform: rotateX( 90deg) translateZ($size/2); }
 .cube__face__bottom { transform: rotateX(-90deg) translateZ($size/2); }
 
-.cube__show__front  { transform: translateZ(-$size/2) rotateY(   0deg); .cube__face{ background-color: #F5F1ED; color:#F5F1ED;opacity: 1; transition: .5s; border-width: 0px; }}
+.cube__show__front  { transform: translateZ(-$size/2) rotateY(   0deg); .cube__face{ background-color: #F5F1ED; color:black;opacity: 1; transition: .4s; border-width: 0; }}
 .cube__show__right  { transform: translateZ(-$size/2) rotateY( -90deg); .cube__face{ background-color: #F5853F; color:black;opacity: 1; transition: .8s; }}
 .cube__show__back   { transform: translateZ(-$size/2) rotateY(-180deg); .cube__face{ background-color: #17C3B2; color:black;opacity: 1; transition: .8s; }}
 .cube__show__left   { transform: translateZ(-$size/2) rotateY(  90deg); .cube__face{ background-color: #5F00BA; color:white;opacity: 1; transition: .8s; }}

@@ -22,7 +22,8 @@ const Cube = () => {
     <div className={style.scene}>        
         <div className={`${style.cube} ${tagMap[context.state.side]}`}>
             <div className={`${style.cube__face} ${style.cube__face__front}`}>
-            
+                <p>Vinicius El Khalili</p>
+                <p>Fullstack developer</p>
             </div>
             <div className={`${style.cube__face} ${style.cube__face__back}`}>
                 Projects
