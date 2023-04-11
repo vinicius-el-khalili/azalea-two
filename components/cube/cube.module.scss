@@ -16,7 +16,7 @@ $size: 280px;
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-$size/2);
-  transition: transform 1s;
+  transition: transform .8s;
 }
 
 .cube__face {
