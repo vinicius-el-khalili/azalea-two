@@ -1,6 +1,11 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import AppContext from "@/context/AppContext"
 import style from "./cube.module.scss"
+
+
 const Cube = () => {
+
+    const context = useContext(AppContext)
 
     const map = {
         "front":style.cube__show__front,
@@ -10,17 +15,16 @@ const Cube = () => {
         "top":style.cube__show__top,
         "bottom":style.cube__show__bottom,
     }
-
-    const [side,setSide] = useState("right")
+    
     const randomize = () => {
         let idx = Math.floor(Math.random()*6)
         let sides = ["front","back","right","left","top","bottom"]
-        setSide(sides[idx])
+        context.setSide(sides[idx])
     }
     return (
     <>
     <div className={style.scene}>        
-        <div className={`${style.cube} ${map[side]}`}>
+        <div className={`${style.cube} ${map[context.state.side]}`}>
             <div className={`${style.cube__face} ${style.cube__face__front}`}   >  front</div>
             <div className={`${style.cube__face} ${style.cube__face__back}`}    >   back</div>
             <div className={`${style.cube__face} ${style.cube__face__right}`}   >  right</div>

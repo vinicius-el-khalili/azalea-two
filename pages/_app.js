@@ -5,18 +5,18 @@ import AppContext from '@/context/AppContext'
 
 
 export default function App({ Component, pageProps }) {
+
+  const [side,setSide] = useState("right")
   
-  const [x,setX] = useState(0)
-  const [y,setY] = useState("hihi")
-
-
   return (
   <>
 
   <AppContext.Provider
     value={{
-      state:{x,y},
-      setX,setY
+      state:{
+        side
+      },
+      setSide
     }}>
 
     <Component {...pageProps} />
