@@ -4,21 +4,29 @@
     overflow: hidden;
     background-color: cadetblue;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: .8fr 1fr 1fr;
+}
+
+.cubeContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .buttonsContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
-    background-color: aliceblue;
 
 }
 
 .navContainer{
-    background-color: aliceblue;
+    background-color: #F5F1ED;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+
 }

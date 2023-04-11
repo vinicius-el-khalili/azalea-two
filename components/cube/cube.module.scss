@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-$size: 280px;
+$size: 250px;
 
 .scene {
   width: $size;
   height: $size;
   perspective: $size*2;
-  margin: auto;
 }
 
 .cube {
@@ -24,7 +23,7 @@ $size: 280px;
   width: $size;
   height: $size;
   border: 20px solid rgba(0, 0, 0, 0.103);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   display: flex;
   justify-content: center;

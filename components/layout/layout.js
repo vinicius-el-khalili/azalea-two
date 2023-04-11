@@ -9,12 +9,16 @@ const Layout = ({children}) => {
 
         <RC_Head/>        
         <div className={style.layoutContainer}>
+
             <div className={style.navContainer}>
-                <Cube/>
+                <div className={style.cubeContainer}>
+                    <Cube/>
+                </div>
                 <div className={style.buttonsContainer}>
                     <NavButtonCollection/>
                 </div>
             </div>
+
         </div>
         
         </>
