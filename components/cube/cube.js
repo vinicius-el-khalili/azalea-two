@@ -8,22 +8,17 @@ const Cube = () => {
     const context = useContext(AppContext)
 
     const tagMap = {
-        "home":style.cube__show__front,
-        "projects":style.cube__show__back,
-        "blog":style.cube__show__right,
-        "cv":style.cube__show__left,
-        "technologies":style.cube__show__top,
-        "contact":style.cube__show__bottom,
-    }
-    
-    const randomize = () => {
-        let idx = Math.floor(Math.random()*6)
-        let sides = ["home","projects","blog","cv","technologies","contact"]
-        context.setSide(sides[idx])
+        "Home":style.cube__show__front,
+        "Projects":style.cube__show__back,
+        "Blog":style.cube__show__right,
+        "CV":style.cube__show__left,
+        "Technologies":style.cube__show__top,
+        "Contact":style.cube__show__bottom,
     }
 
     return (
     <>
+
     <div className={style.scene}>        
         <div className={`${style.cube} ${tagMap[context.state.side]}`}>
             <div className={`${style.cube__face} ${style.cube__face__front}`}   > Home </div>
@@ -34,7 +29,7 @@ const Cube = () => {
             <div className={`${style.cube__face} ${style.cube__face__bottom}`}  > Contact              </div>
         </div>
     </div>
-    <div className={style.switch} onClick={randomize}>Switch</div>
+
     </>
 )} 
 export default Cube;

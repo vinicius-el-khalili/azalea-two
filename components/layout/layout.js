@@ -1,17 +1,21 @@
-import Head from "next/head";
+import Cube from "../cube/cube";
+import NavButtonCollection from "../navButton/NavButtonGroup/NavButtonGroup";
+import RC_Head from "./head";
+import style from "./layout.module.scss"
 
 const Layout = ({children}) => {
     return (
         <>
-        
-        <Head>
-        <title>Vinicius El Khalili</title>
-        <meta name="description" content="My portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        </Head>
 
-        {children}
+        <RC_Head/>        
+        <div className={style.layoutContainer}>
+            <div className={style.navContainer}>
+                <Cube/>
+                <div className={style.buttonsContainer}>
+                    <NavButtonCollection/>
+                </div>
+            </div>
+        </div>
         
         </>
     );

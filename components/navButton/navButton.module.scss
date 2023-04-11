@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.link{
+    text-decoration: none;
+}
+
 .button{
-    width: 6rem;
-    height: 2rem;
+    padding: 8px;
     display: grid;
     place-items: center;
+    text-align: center;
     cursor: pointer;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
     &:hover{
-        background-color: black;
         color: white;
+        background-color: black;
     }
 }

@@ -7,7 +7,7 @@ import AppContext from '@/context/AppContext'
 
 export default function App({ Component, pageProps }) {
 
-  const [side,setSide] = useState("home")
+  const [side,setSide] = useState("Home")
   
   return (
   <>
