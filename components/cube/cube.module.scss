@@ -1,4 +1,6 @@
-$size: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+$size: 280px;
 
 .scene {
   width: $size;
@@ -8,6 +10,7 @@ $size: 250px;
 }
 
 .cube {
+  font-family: 'Press Start 2P', cursive;
   width: 100%;
   height: 100%;
   position: relative;
@@ -21,11 +24,12 @@ $size: 250px;
   width: $size;
   height: $size;
   border: 20px solid white;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
+  text-align: center;
   padding: 2rem;
   background: #ffffffef;
 }
@@ -37,12 +41,12 @@ $size: 250px;
 .cube__face__top    { transform: rotateX( 90deg) translateZ($size/2); }
 .cube__face__bottom { transform: rotateX(-90deg) translateZ($size/2); }
 
-.cube__show__front  { transform: translateZ(-$size/2) rotateY(   0deg); .cube__face{ background-color: #DCE1E9; color:black;opacity: 1; transition: 1s; }}
-.cube__show__right  { transform: translateZ(-$size/2) rotateY( -90deg); .cube__face{ background-color: #F5853F; color:black;opacity: 1; transition: 1s; }}
-.cube__show__back   { transform: translateZ(-$size/2) rotateY(-180deg); .cube__face{ background-color: #17C3B2; color:black;opacity: 1; transition: 1s; }}
-.cube__show__left   { transform: translateZ(-$size/2) rotateY(  90deg); .cube__face{ background-color: #5F00BA; color:white;opacity: 1; transition: 1s; }}
-.cube__show__top    { transform: translateZ(-$size/2) rotateX( -90deg); .cube__face{ background-color: #BA274A; color:white;opacity: 1; transition: 1s; }}
-.cube__show__bottom { transform: translateZ(-$size/2) rotateX(  90deg); .cube__face{ background-color: #275DAD; color:white;opacity: 1; transition: 1s; }}
+.cube__show__front  { transform: translateZ(-$size/2) rotateY(   0deg); .cube__face{ background-color: #DCE1E9; color:black;opacity: 1; transition: 1.2s; }}
+.cube__show__right  { transform: translateZ(-$size/2) rotateY( -90deg); .cube__face{ background-color: #F5853F; color:black;opacity: 1; transition: 1.2s; }}
+.cube__show__back   { transform: translateZ(-$size/2) rotateY(-180deg); .cube__face{ background-color: #17C3B2; color:black;opacity: 1; transition: 1.2s; }}
+.cube__show__left   { transform: translateZ(-$size/2) rotateY(  90deg); .cube__face{ background-color: #5F00BA; color:white;opacity: 1; transition: 1.2s; }}
+.cube__show__top    { transform: translateZ(-$size/2) rotateX( -90deg); .cube__face{ background-color: #BA274A; color:black;opacity: 1; transition: 1.2s; }}
+.cube__show__bottom { transform: translateZ(-$size/2) rotateX(  90deg); .cube__face{ background-color: #275DAD; color:white;opacity: 1; transition: 1.2s; }}
 
 .switch{
     background-color: rgb(193, 239, 255);
@@ -52,6 +56,7 @@ $size: 250px;
     padding: 1rem;
     cursor: pointer;
     margin-left: 100px;
+    user-select: none;
     &:hover{
         background-color: black;
         color: wheat;
