@@ -21,12 +21,24 @@ const Cube = () => {
 
     <div className={style.scene}>        
         <div className={`${style.cube} ${tagMap[context.state.side]}`}>
-            <div className={`${style.cube__face} ${style.cube__face__front}`}   > Home </div>
-            <div className={`${style.cube__face} ${style.cube__face__back}`}    > Projects              </div>
-            <div className={`${style.cube__face} ${style.cube__face__right}`}   > Blog              </div>
-            <div className={`${style.cube__face} ${style.cube__face__left}`}    > CV              </div>
-            <div className={`${style.cube__face} ${style.cube__face__top}`}     > Technologies              </div>
-            <div className={`${style.cube__face} ${style.cube__face__bottom}`}  > Contact              </div>
+            <div className={`${style.cube__face} ${style.cube__face__front}`}>
+            
+            </div>
+            <div className={`${style.cube__face} ${style.cube__face__back}`}>
+                Projects
+            </div>
+            <div className={`${style.cube__face} ${style.cube__face__right}`}>
+                Blog
+            </div>
+            <div className={`${style.cube__face} ${style.cube__face__left}`}>
+                CV
+            </div>
+            <div className={`${style.cube__face} ${style.cube__face__top}`}>
+                Technologies
+            </div>
+            <div className={`${style.cube__face} ${style.cube__face__bottom}`}>
+                Contact
+            </div>
         </div>
     </div>
 
