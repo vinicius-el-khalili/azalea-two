@@ -6,104 +6,73 @@ const pages = ["Home","Projects","Blog","CV","Technologies","Contact"]
 
 // --------- CUBE --------- //
 
-const cubeRotationMap = {
-    "Home":cubeSCSS.cube__show__front,
-    "Projects":cubeSCSS.cube__show__back,
-    "Blog":cubeSCSS.cube__show__right,
-    "CV":cubeSCSS.cube__show__left,
-    "Technologies":cubeSCSS.cube__show__top,
-    "Contact":cubeSCSS.cube__show__bottom,
-}
-const cubeFaceClassName = {
-    "Home":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__front}`,
-    "Projects":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__back}`,
-    "Blog":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__right}`,
-    "CV":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__left}`,
-    "Technologies":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__top}`,
-    "Contact":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__bottom}`,
-}
-const cubeFaceStyle = {
-    "Home":{
-        backgroundColor:"white",
-        color:"black",
-        borderColor:"transparent"
-    },
-    "Projects":{
-        backgroundColor:"#17C3B2",
-        color:"black"
-    },
-    "Blog":{
-        backgroundColor:"#F5853F",
-        color:"black"
-    },
-    "CV":{
-        backgroundColor:"#5F00BA",
-        color:"white",
-        boxShadow:"0 0 20px #B9EDDD"
-    },
-    "Technologies":{
-        backgroundColor:"#BA274A",
-        color:"white"
-    },
-    "Contact":{
-        backgroundColor:"#275DAD",
-        color:"white"
-    },
-}
+var cubeRotationMap = {}
+cubeRotationMap[pages[0]]=cubeSCSS.cube__show__front
+cubeRotationMap[pages[1]]=cubeSCSS.cube__show__back
+cubeRotationMap[pages[2]]=cubeSCSS.cube__show__right
+cubeRotationMap[pages[3]]=cubeSCSS.cube__show__left
+cubeRotationMap[pages[4]]=cubeSCSS.cube__show__top
+cubeRotationMap[pages[5]]=cubeSCSS.cube__show__bottom
+
+const cubeFaceClassName = {}
+cubeFaceClassName[pages[0]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__front}`
+cubeFaceClassName[pages[1]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__back}`
+cubeFaceClassName[pages[2]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__right}`
+cubeFaceClassName[pages[3]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__left}`
+cubeFaceClassName[pages[4]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__top}`
+cubeFaceClassName[pages[5]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__bottom}`
+
+const cubeFaceStyle = {}
+cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",borderColor:"transparent"},
+cubeFaceStyle[pages[1]]={backgroundColor:"#17C3B2",color:"black"}
+cubeFaceStyle[pages[2]]={backgroundColor:"#F5853F",color:"black"}
+cubeFaceStyle[pages[3]]={backgroundColor:"#5F00BA",color:"white",boxShadow:"0 0 20px #B9EDDD"}
+cubeFaceStyle[pages[4]]={backgroundColor:"#BA274A",color:"white"}
+cubeFaceStyle[pages[5]]={backgroundColor:"#275DAD",color:"white"}
 
 // --------- LAYOUT --------- //
  
-const borderColorMap = {
-    "Home":         "transparent",
-    "Projects":     "#F4EEE0",
-    "Blog":         "#F4EEE0",
-    "CV":           "#F4EEE0",
-    "Technologies": "#576CBC",
-    "Contact":      "#576CBC",
-}
-const childrenContainerStyle = {
-    "Home":         {borderColor:"red"},
-    "Projects":     {borderColor:"red"},
-    "Blog":         {borderColor:"red"},
-    "CV":           {borderColor:"red"},
-    "Technologies": {borderColor:"red"},
-    "Contact":      {borderColor:"red"},
-}
-const buttonsContainerStyle = {
-    "Home":         {borderColor:"pink"},
-    "Projects":     {borderColor:"pink"},
-    "Blog":         {borderColor:"pink"},
-    "CV":           {borderColor:"pink"},
-    "Technologies": {borderColor:"pink"},
-    "Contact":      {borderColor:"pink"},
-}
-const layoutContainerStyle = {
-    "Home":         {backgroundColor:"salmon"},
-    "Projects":     {backgroundColor:"salmon"},
-    "Blog":         {backgroundColor:"salmon"},
-    "CV":           {backgroundColor:"salmon"},
-    "Technologies": {backgroundColor:"salmon"},
-    "Contact":      {backgroundColor:"salmon"},
-}
+const childrenContainerStyle = {}
+childrenContainerStyle[pages[0]]={borderColor:"red"}
+childrenContainerStyle[pages[1]]={borderColor:"red"}
+childrenContainerStyle[pages[2]]={borderColor:"red"}
+childrenContainerStyle[pages[3]]={borderColor:"red"}
+childrenContainerStyle[pages[4]]={borderColor:"red"}
+childrenContainerStyle[pages[5]]={borderColor:"red"}
+
+const buttonsContainerStyle = {}
+buttonsContainerStyle[pages[0]]={borderColor:"pink"}
+buttonsContainerStyle[pages[1]]={borderColor:"pink"}
+buttonsContainerStyle[pages[2]]={borderColor:"pink"}
+buttonsContainerStyle[pages[3]]={borderColor:"pink"}
+buttonsContainerStyle[pages[4]]={borderColor:"pink"}
+buttonsContainerStyle[pages[5]]={borderColor:"pink"}
+
+const layoutContainerStyle = {}
+layoutContainerStyle[pages[0]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[1]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[2]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[3]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[4]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[5]]={backgroundColor:"salmon"}
 
 // --------- NAVBUTTON --------- //
 
-const navButtonStyle = {
-    "Home":         {color:"black"},
-    "Projects":     {color:"black"},
-    "Blog":         {color:"black"},
-    "CV":           {color:"black"},
-    "Technologies": {color:"black"},
-    "Contact":      {color:"black"},
-}
-const navButtonHoverStyle = {
-    "Home":         {color:"white",backgroundColor:"black"},
-    "Projects":     {color:"white",backgroundColor:"black"},
-    "Blog":         {color:"white",backgroundColor:"black"},
-    "CV":           {color:"white",backgroundColor:"black"},
-    "Technologies": {color:"white",backgroundColor:"black"},
-    "Contact":      {color:"white",backgroundColor:"black"},
-}
+const navButtonStyle = {}
+navButtonStyle[pages[0]]={color:"black"}
+navButtonStyle[pages[1]]={color:"black"}
+navButtonStyle[pages[2]]={color:"black"}
+navButtonStyle[pages[3]]={color:"black"}
+navButtonStyle[pages[4]]={color:"black"}
+navButtonStyle[pages[5]]={color:"black"}
+
+const navButtonHoverStyle = {}
+navButtonHoverStyle[pages[0]]={color:"green",backgroundColor:"black"}
+navButtonHoverStyle[pages[1]]={color:"white",backgroundColor:"black"}
+navButtonHoverStyle[pages[2]]={color:"white",backgroundColor:"black"}
+navButtonHoverStyle[pages[3]]={color:"white",backgroundColor:"black"}
+navButtonHoverStyle[pages[4]]={color:"white",backgroundColor:"black"}
+navButtonHoverStyle[pages[5]]={color:"white",backgroundColor:"black"}
 
 // --------- export --------- //
 
