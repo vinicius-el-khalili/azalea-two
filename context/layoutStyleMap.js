@@ -77,6 +77,7 @@ navButtonHoverStyle[pages[5]]={color:"white",backgroundColor:"black"}
 // --------- export --------- //
 
 const layoutStyleMap = {
+    pages,
     // layout
     layoutContainerStyle,
     childrenContainerStyle,
