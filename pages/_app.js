@@ -8,7 +8,7 @@ import AppContext from '@/context/AppContext'
 
 export default function App({ Component, pageProps }) {
 
-  const [side,setSide] = useState("Home")
+  const [page,setPage] = useState("Home")
   
   return (
   <>
@@ -16,9 +16,9 @@ export default function App({ Component, pageProps }) {
   <AppContext.Provider
     value={{
       state:{
-        side
+        page
       },
-      setSide
+      setPage
     }}>
 
     <FrameLayout>

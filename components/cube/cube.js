@@ -7,7 +7,7 @@ const Cube = () => {
 
     const context = useContext(AppContext)
 
-    const tagMap = {
+    const page_side_Map = {
         "Home":style.cube__show__front,
         "Projects":style.cube__show__back,
         "Blog":style.cube__show__right,
@@ -20,7 +20,7 @@ const Cube = () => {
     <>
 
     <div className={style.scene}>        
-        <div className={`${style.cube} ${tagMap[context.state.side]}`}>
+        <div className={`${style.cube} ${page_side_Map[context.state.page]}`}>
             <div className={`${style.cube__face} ${style.cube__face__front}`}>
                 <p>Vinicius El Khalili</p>
                 <p>Fullstack developer</p>

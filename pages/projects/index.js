@@ -5,7 +5,7 @@ import AppContext from "@/context/AppContext";
 const Projects = () => {
     const context = useContext(AppContext)
     useEffect(()=>{
-        context.setSide("Projects")
+        context.setPage("Projects")
     },[])
     return (
         <>

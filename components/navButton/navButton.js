@@ -7,8 +7,7 @@ const NavButton = ({title,page,tag}) => {
 
     const context = useContext(AppContext)
     const handleClick = () => {
-        console.log("hi")
-        context.setSide(tag)
+        context.setPage(tag)
     }
 
     return (
