@@ -1,7 +1,6 @@
 .layoutContainer{
     height: 100vh;
     width: 100%;
-    background-color: white;
     position: fixed;
     padding: 2rem 10% 5rem 10%;
 
@@ -10,11 +9,10 @@
         display: flex;
         justify-content: center;
         gap: .5rem;
-        background-color: lightgray;
     }
 
     .pageContainer{
-        padding-top: 20px;
+        padding-top: 1rem;
         height: 100%;
         overflow: scroll;
         display: flex;
@@ -28,9 +26,10 @@
         }
         
         .childrenContainer{
-            background-color: gray;
             height: 100%;
             width: 100%;
+            overflow: scroll;
+            background-color: gray;
         }
     }
 }
