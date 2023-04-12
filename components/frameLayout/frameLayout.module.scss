@@ -3,32 +3,34 @@
     width: 100%;
     background-color: white;
     position: fixed;
-    padding: 2rem 15% 5rem 15%;
-}
+    padding: 2rem 10% 5rem 10%;
 
-.buttonsContainer{
-    display: flex;
-    justify-content: center;
-    gap: .5rem;
-    border: 1px solid black;
-}
 
-.pageContainer{
-    border: 1px solid black;
-    height: 100%;
-    overflow: scroll;
-    display: flex;
-}
+    .buttonsContainer{
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+        background-color: lightgray;
+    }
 
-.cube{
-    margin: 0rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transform: translate(50%);
-}
-.childrenContainer{
-    background-color: gray;
-    height: 100%;
-    width: 100%;
+    .pageContainer{
+        padding-top: 20px;
+        height: 100%;
+        overflow: scroll;
+        display: flex;
+
+        .cube{
+            margin: 0rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transform: translate(50%);
+        }
+        
+        .childrenContainer{
+            background-color: gray;
+            height: 100%;
+            width: 100%;
+        }
+    }
 }
