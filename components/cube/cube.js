@@ -4,7 +4,6 @@ import style from "./cube.module.scss"
 
 
 const Cube = () => {
-
     const context = useContext(AppContext)
     return (
     <>
