@@ -1,12 +1,20 @@
 import style from "./navButton.module.scss"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import AppContext from "@/context/AppContext"
 import Link from "next/link"
 
 const NavButton = ({title,page,tag}) => {
+    
     const context = useContext(AppContext)
+    const [hover,setHover] = useState(false)
     const handleClick = () => {
         context.setPage(tag)
+    }
+    const handleMouseEnter = () => {
+        setHover(true)
+    }
+    const handleMouseLeave = () => {
+        setHover(false)
     }
     const fontColorMap = {
         "Home":         "red",
@@ -16,11 +24,32 @@ const NavButton = ({title,page,tag}) => {
         "Technologies": "black",
         "Contact":      "black",
     }
+    const fontColorHoverMap = {
+        "Home":         "blue",
+        "Projects":     "blue",
+        "Blog":         "blue",
+        "CV":           "blue",
+        "Technologies": "blue",
+        "Contact":      "blue",
+    }
+    const backgroundColorHoverMap = {
+        "Home":         "green",
+        "Projects":     "green",
+        "Blog":         "green",
+        "CV":           "green",
+        "Technologies": "green",
+        "Contact":      "green",
+    }
     return (
         <>
         
-            <Link className={style.link} href={page} onClick={handleClick}>
-                <div className={style.button} style={{color:fontColorMap[context.state.page]}}>
+            <Link className={style.link} href={page} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <div className={style.button} 
+                    style={{
+                        color: hover?fontColorHoverMap[context.state.page]:fontColorMap[context.state.page],
+                        backgroundColor: hover?backgroundColorHoverMap[context.state.page]:""
+                        }}
+                        >
                     {title}
                 </div>
             </Link>
