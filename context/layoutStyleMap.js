@@ -77,6 +77,15 @@ const fontColorMap = {
     "Contact":      "black",
 }
 
+const fontColorHoverMap = {
+    "Home":         "blue",
+    "Projects":     "blue",
+    "Blog":         "blue",
+    "CV":           "blue",
+    "Technologies": "blue",
+    "Contact":      "blue",
+}
+
 // --------- export --------- //
 
 const layoutStyleMap = {
@@ -86,6 +95,7 @@ const layoutStyleMap = {
     cubeFaceClassName,
     cubeFaceStyle,
     fontColorMap,
+    fontColorHoverMap,
 }
 
 

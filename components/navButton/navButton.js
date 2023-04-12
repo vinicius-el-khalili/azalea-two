@@ -15,14 +15,6 @@ const NavButton = ({title,page,tag}) => {
     const handleMouseLeave = () => {
         setHover(false)
     }
-    const fontColorHoverMap = {
-        "Home":         "blue",
-        "Projects":     "blue",
-        "Blog":         "blue",
-        "CV":           "blue",
-        "Technologies": "blue",
-        "Contact":      "blue",
-    }
     const backgroundColorHoverMap = {
         "Home":         "green",
         "Projects":     "green",
@@ -37,7 +29,7 @@ const NavButton = ({title,page,tag}) => {
             <Link className={style.link} href={page} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <div className={style.button} 
                     style={{
-                        color: hover?fontColorHoverMap[context.state.page]:context.layoutStyleMap.fontColorMap[context.state.page],
+                        color: hover?context.layoutStyleMap.fontColorHoverMap[context.state.page]:context.layoutStyleMap.fontColorMap[context.state.page],
                         backgroundColor: hover?backgroundColorHoverMap[context.state.page]:""
                         }}
                         >
