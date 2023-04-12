@@ -15,6 +15,7 @@ const NavButton = ({title,page,tag}) => {
     const handleMouseLeave = () => {
         setHover(false)
     }
+    
     return (
         <>
         
