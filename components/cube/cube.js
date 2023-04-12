@@ -54,7 +54,7 @@ const Cube = () => {
     <>
 
     <div className={style.scene}>        
-        <div className={`${style.cube} ${cubeRotationMap[context.state.page]}`}>
+        <div className={`${style.cube} ${context.layoutStyleMap.cubeRotationMap[context.state.page]}`}>
             <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Home"]}><p>Vinicius El Khalili</p><p>Fullstack developer</p></div>
             <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Projects"]}>Projects</div>
             <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Blog"]}>Blog</div>

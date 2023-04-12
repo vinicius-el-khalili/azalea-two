@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
-import Layout from '@/components/layout/layout'
 import FrameLayout from '@/components/frameLayout/frameLayout'
+import layoutStyleMap from '@/context/layoutStyleMap'
 
 import { useState } from 'react'
 import AppContext from '@/context/AppContext'
@@ -18,7 +18,8 @@ export default function App({ Component, pageProps }) {
       state:{
         page
       },
-      setPage
+      setPage,
+      layoutStyleMap
     }}>
 
     <FrameLayout>
