@@ -6,22 +6,6 @@ import style from "./cube.module.scss"
 const Cube = () => {
 
     const context = useContext(AppContext)
-    const cubeRotationMap = {
-        "Home":style.cube__show__front,
-        "Projects":style.cube__show__back,
-        "Blog":style.cube__show__right,
-        "CV":style.cube__show__left,
-        "Technologies":style.cube__show__top,
-        "Contact":style.cube__show__bottom,
-    }
-    const cubeFaceClassName = {
-        "Home":`${style.cube__face} ${style.cube__face__front}`,
-        "Projects":`${style.cube__face} ${style.cube__face__back}`,
-        "Blog":`${style.cube__face} ${style.cube__face__right}`,
-        "CV":`${style.cube__face} ${style.cube__face__left}`,
-        "Technologies":`${style.cube__face} ${style.cube__face__top}`,
-        "Contact":`${style.cube__face} ${style.cube__face__bottom}`,
-    }
     const cubeFaceStyle = {
         "Home":{
             backgroundColor:"white",
@@ -55,12 +39,12 @@ const Cube = () => {
 
     <div className={style.scene}>        
         <div className={`${style.cube} ${context.layoutStyleMap.cubeRotationMap[context.state.page]}`}>
-            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Home"]}><p>Vinicius El Khalili</p><p>Fullstack developer</p></div>
-            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Projects"]}>Projects</div>
-            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Blog"]}>Blog</div>
-            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["CV"]}>CV</div>
-            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Technologies"]}>Technologies</div>
-            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Contact"]}>Contact</div>
+            <div style={cubeFaceStyle[context.state.page]} className={context.layoutStyleMap.cubeFaceClassName["Home"]}><p>Vinicius El Khalili</p><p>Fullstack developer</p></div>
+            <div style={cubeFaceStyle[context.state.page]} className={context.layoutStyleMap.cubeFaceClassName["Projects"]}>Projects</div>
+            <div style={cubeFaceStyle[context.state.page]} className={context.layoutStyleMap.cubeFaceClassName["Blog"]}>Blog</div>
+            <div style={cubeFaceStyle[context.state.page]} className={context.layoutStyleMap.cubeFaceClassName["CV"]}>CV</div>
+            <div style={cubeFaceStyle[context.state.page]} className={context.layoutStyleMap.cubeFaceClassName["Technologies"]}>Technologies</div>
+            <div style={cubeFaceStyle[context.state.page]} className={context.layoutStyleMap.cubeFaceClassName["Contact"]}>Contact</div>
         </div>
     </div>
 

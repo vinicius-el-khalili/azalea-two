@@ -1,5 +1,7 @@
 import cubeSCSS from "@/components/cube/cube.module.scss"
 
+// --------- CUBE --------- //
+
 const cubeRotationMap = {
     "Home":cubeSCSS.cube__show__front,
     "Projects":cubeSCSS.cube__show__back,
@@ -8,6 +10,17 @@ const cubeRotationMap = {
     "Technologies":cubeSCSS.cube__show__top,
     "Contact":cubeSCSS.cube__show__bottom,
 }
+const cubeFaceClassName = {
+    "Home":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__front}`,
+    "Projects":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__back}`,
+    "Blog":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__right}`,
+    "CV":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__left}`,
+    "Technologies":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__top}`,
+    "Contact":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__bottom}`,
+}
+
+// --------- LAYOUT --------- //
+
 const borderColorMap = {
     "Home":         "#F4EEE0",
     "Projects":     "#F4EEE0",
@@ -16,6 +29,7 @@ const borderColorMap = {
     "Technologies": "#576CBC",
     "Contact":      "#576CBC",
 }
+
 const backgroundColorMap = {
     "Home":         "#F4EEE0",
     "Projects":     "#393646",
@@ -25,11 +39,13 @@ const backgroundColorMap = {
     "Contact":      "#F4EEE0",
 }
 
+// --------- export --------- //
 
 const layoutStyleMap = {
     cubeRotationMap,
     borderColorMap,
     backgroundColorMap,
+    cubeFaceClassName,
 }
 
 
