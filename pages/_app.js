@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import Layout from '@/components/layout/layout'
+import FrameLayout from '@/components/frameLayout/frameLayout'
 
 import { useState } from 'react'
 import AppContext from '@/context/AppContext'
@@ -20,9 +21,9 @@ export default function App({ Component, pageProps }) {
       setSide
     }}>
 
-    <Layout>
+    <FrameLayout>
       <Component {...pageProps} />
-    </Layout>
+    </FrameLayout>
 
   </AppContext.Provider> 
 

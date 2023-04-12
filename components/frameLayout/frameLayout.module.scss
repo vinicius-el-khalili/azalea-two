@@ -1,0 +1,34 @@
+.layoutContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    padding: 2rem 15% 5rem 15%;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    border: 1px solid black;
+}
+
+.pageContainer{
+    border: 1px solid black;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+}
+
+.cube{
+    margin: 0rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translate(50%);
+}
+.childrenContainer{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+}
