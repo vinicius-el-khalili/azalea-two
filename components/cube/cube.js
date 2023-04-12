@@ -11,12 +11,14 @@ const Cube = () => {
 
     <div className={style.scene}>        
         <div className={`${style.cube} ${context.layoutStyleMap.cubeRotationMap[context.state.page]}`}>
-            <CubeFace page={context.layoutStyleMap.pages[0]}> <p>Vinicius El Khalili</p><p>Front end developer</p> </CubeFace>
-            <CubeFace page={context.layoutStyleMap.pages[1]}>Projects</CubeFace>
-            <CubeFace page={context.layoutStyleMap.pages[2]}>Blog</CubeFace>
-            <CubeFace page={context.layoutStyleMap.pages[3]}>CV</CubeFace>
-            <CubeFace page={context.layoutStyleMap.pages[4]}>Technologies</CubeFace>
-            <CubeFace page={context.layoutStyleMap.pages[5]}>Contact</CubeFace>
+            <CubeFace page={context.layoutStyleMap.pages[0]}>
+                <p>Vinicius El Khalili</p>
+                <p>Front end developer</p></CubeFace>
+            <CubeFace page={context.layoutStyleMap.pages[1]}>{context.layoutStyleMap.pages[1]}</CubeFace>
+            <CubeFace page={context.layoutStyleMap.pages[2]}>{context.layoutStyleMap.pages[2]}</CubeFace>
+            <CubeFace page={context.layoutStyleMap.pages[3]}>{context.layoutStyleMap.pages[3]}</CubeFace>
+            <CubeFace page={context.layoutStyleMap.pages[4]}>{context.layoutStyleMap.pages[4]}</CubeFace>
+            <CubeFace page={context.layoutStyleMap.pages[5]}>{context.layoutStyleMap.pages[5]}</CubeFace>
             
         </div>
     </div>
