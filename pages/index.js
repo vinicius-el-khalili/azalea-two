@@ -9,7 +9,7 @@ export default function Home() {
 
     <>
 
-    <div className={style.mainContainer}></div>
+    <h1>Home</h1>
 
     </>
 
