@@ -85,6 +85,14 @@ const fontColorHoverMap = {
     "Technologies": "blue",
     "Contact":      "blue",
 }
+const backgroundColorHoverMap = {
+    "Home":         "green",
+    "Projects":     "green",
+    "Blog":         "green",
+    "CV":           "green",
+    "Technologies": "green",
+    "Contact":      "green",
+}
 
 // --------- export --------- //
 
@@ -96,6 +104,7 @@ const layoutStyleMap = {
     cubeFaceStyle,
     fontColorMap,
     fontColorHoverMap,
+    backgroundColorHoverMap,
 }
 
 
