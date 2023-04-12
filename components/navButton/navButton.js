@@ -15,13 +15,13 @@ const NavButton = ({page}) => {
     const handleMouseLeave = () => {
         setHover(false)
     }
-    
+    const href = page=="Home"?"/":"/"+page.toLowerCase()
     return (
         <>
         
             <Link
             className={style.link}
-            href={"/"+page.toLowerCase()}
+            href={href}
             onClick={handleClick}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>

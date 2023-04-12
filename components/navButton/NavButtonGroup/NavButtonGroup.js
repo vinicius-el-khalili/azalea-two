@@ -7,12 +7,11 @@ const NavButtonCollection = () => {
     return (
         <>
 
-        <NavButton page={context.layoutStyleMap.pages[0]}/>
-        <NavButton page={context.layoutStyleMap.pages[1]}/>
-        <NavButton page={context.layoutStyleMap.pages[2]}/>
-        <NavButton page={context.layoutStyleMap.pages[3]}/>
-        <NavButton page={context.layoutStyleMap.pages[4]}/>
-        <NavButton page={context.layoutStyleMap.pages[5]}/>
+        {
+            context.layoutStyleMap.pages.map( page => (
+                <NavButton page={page} key={"navbutton_"+page}/>        
+            ))
+        }
 
         </>
     );
