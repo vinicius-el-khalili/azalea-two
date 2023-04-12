@@ -9,6 +9,7 @@
         display: flex;
         justify-content: center;
         gap: .5rem;
+        border: 2px solid black;
     }
 
     .pageContainer{
@@ -29,7 +30,7 @@
             height: 100%;
             width: 100%;
             overflow: scroll;
-            background-color: gray;
+            border: 2px solid black;
         }
     }
 }
