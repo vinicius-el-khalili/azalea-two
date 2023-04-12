@@ -15,7 +15,7 @@ const FrameLayout = ({children}) => {
             
             <div
             className={style.buttonsContainer}
-            style={{borderColor:context.layoutStyleMap.borderColorMap[context.state.page]}}>
+            style={context.layoutStyleMap.buttonsContainerStyle[context.state.page]}>
                 <NavButtonCollection/>
             </div>
 

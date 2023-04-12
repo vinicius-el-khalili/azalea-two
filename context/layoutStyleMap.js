@@ -69,6 +69,14 @@ const childrenContainerStyle = {
     "Technologies": {borderColor:"red"},
     "Contact":      {borderColor:"red"},
 }
+const buttonsContainerStyle = {
+    "Home":         {borderColor:"pink"},
+    "Projects":     {borderColor:"pink"},
+    "Blog":         {borderColor:"pink"},
+    "CV":           {borderColor:"pink"},
+    "Technologies": {borderColor:"pink"},
+    "Contact":      {borderColor:"pink"},
+}
 
 const backgroundColorMap = {
     "Home":         "#B2B2B2",
@@ -113,6 +121,7 @@ const layoutStyleMap = {
     cubeRotationMap,
     borderColorMap,
     childrenContainerStyle,
+    buttonsContainerStyle,
     backgroundColorMap,
     cubeFaceClassName,
     cubeFaceStyle,
