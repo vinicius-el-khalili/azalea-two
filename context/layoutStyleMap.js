@@ -18,6 +18,33 @@ const cubeFaceClassName = {
     "Technologies":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__top}`,
     "Contact":`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__bottom}`,
 }
+const cubeFaceStyle = {
+    "Home":{
+        backgroundColor:"white",
+        color:"black",
+        border:"2px solid black"
+    },
+    "Projects":{
+        backgroundColor:"#17C3B2",
+        color:"black"
+    },
+    "Blog":{
+        backgroundColor:"#F5853F",
+        color:"black"
+    },
+    "CV":{
+        backgroundColor:"#5F00BA",
+        color:"white"
+    },
+    "Technologies":{
+        backgroundColor:"#BA274A",
+        color:"white"
+    },
+    "Contact":{
+        backgroundColor:"#275DAD",
+        color:"white"
+    },
+}
 
 // --------- LAYOUT --------- //
 
@@ -46,6 +73,7 @@ const layoutStyleMap = {
     borderColorMap,
     backgroundColorMap,
     cubeFaceClassName,
+    cubeFaceStyle,
 }
 
 
