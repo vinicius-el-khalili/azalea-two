@@ -6,20 +6,12 @@ import AppContext from "@/context/AppContext";
 
 const FrameLayout = ({children}) => {
     const context = useContext(AppContext)
-    const backgroundColorMap = {
-        "Home":         "#F4EEE0",
-        "Projects":     "#393646",
-        "Blog":         "#393646",
-        "CV":           "#393646",
-        "Technologies": "#393646",
-        "Contact":      "#F4EEE0",
-    }
     return (
         <>
         
         <div 
         className={style.layoutContainer}
-        style={{backgroundColor:backgroundColorMap[context.state.page]}}>
+        style={{backgroundColor:context.layoutStyleMap.backgroundColorMap[context.state.page]}}>
             <div
             className={style.buttonsContainer}
             style={{borderColor:context.layoutStyleMap.borderColorMap[context.state.page]}}>

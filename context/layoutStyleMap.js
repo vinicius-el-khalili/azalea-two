@@ -16,11 +16,20 @@ const borderColorMap = {
     "Technologies": "#576CBC",
     "Contact":      "#576CBC",
 }
+const backgroundColorMap = {
+    "Home":         "#F4EEE0",
+    "Projects":     "#393646",
+    "Blog":         "#393646",
+    "CV":           "#393646",
+    "Technologies": "#393646",
+    "Contact":      "#F4EEE0",
+}
 
 
 const layoutStyleMap = {
     cubeRotationMap,
     borderColorMap,
+    backgroundColorMap,
 }
 
 
