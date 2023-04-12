@@ -14,18 +14,6 @@ const Cube = () => {
         "Technologies":style.cube__show__top,
         "Contact":style.cube__show__bottom,
     }
-    const cubeStyleMap = {
-        "Home":{
-            backgroundColor:"white",
-            color:"black",
-            border:"2px solid red",
-        },
-        "Projects":{},
-        "Blog":{},
-        "CV":{},
-        "Technologies":{},
-        "Contact":{},
-    }
     const cubeFaceClassName = {
         "Home":`${style.cube__face} ${style.cube__face__front}`,
         "Projects":`${style.cube__face} ${style.cube__face__back}`,
@@ -34,27 +22,45 @@ const Cube = () => {
         "Technologies":`${style.cube__face} ${style.cube__face__top}`,
         "Contact":`${style.cube__face} ${style.cube__face__bottom}`,
     }
-    
+    const cubeFaceStyle = {
+        "Home":{
+            backgroundColor:"white",
+            color:"black",
+            border:"2px solid black"
+        },
+        "Projects":{
+            backgroundColor:"#17C3B2",
+            color:"black"
+        },
+        "Blog":{
+            backgroundColor:"#F5853F",
+            color:"black"
+        },
+        "CV":{
+            backgroundColor:"#5F00BA",
+            color:"white"
+        },
+        "Technologies":{
+            backgroundColor:"#BA274A",
+            color:"white"
+        },
+        "Contact":{
+            backgroundColor:"#275DAD",
+            color:"white"
+        },
+    }
 
     return (
     <>
 
     <div className={style.scene}>        
-        <div className={`${style.cube} ${cubeRotationMap[context.state.page]}`} style={cubeStyleMap[context.state.page]}>
-            <div className={cubeFaceClassName["Home"]}>
-                <p>Vinicius El Khalili</p>
-                <p>Fullstack developer</p>
-            </div>
-            <div className={cubeFaceClassName["Projects"]}>
-                Projects</div>
-            <div className={cubeFaceClassName["Blog"]}>
-                Blog</div>
-            <div className={cubeFaceClassName["CV"]}>
-                CV</div>
-            <div className={cubeFaceClassName["Technologies"]}>
-                Technologies</div>
-            <div className={cubeFaceClassName["Contact"]}>
-                Contact</div>
+        <div className={`${style.cube} ${cubeRotationMap[context.state.page]}`}>
+            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Home"]}><p>Vinicius El Khalili</p><p>Fullstack developer</p></div>
+            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Projects"]}>Projects</div>
+            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Blog"]}>Blog</div>
+            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["CV"]}>CV</div>
+            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Technologies"]}>Technologies</div>
+            <div style={cubeFaceStyle[context.state.page]} className={cubeFaceClassName["Contact"]}>Contact</div>
         </div>
     </div>
 

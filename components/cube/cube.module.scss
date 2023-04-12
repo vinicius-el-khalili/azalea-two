@@ -52,10 +52,10 @@ $size: 210px;
 .cube__face__top    { transform: rotateX( 90deg) translateZ($size/2); }
 .cube__face__bottom { transform: rotateX(-90deg) translateZ($size/2); }
 
-.cube__show__front  { transform: translateZ(-$size/2) rotateY(   0deg); .cube__face{ background-color: white; color:black; border: 2px solid black;}}
-.cube__show__back   { transform: translateZ(-$size/2) rotateY(-180deg); .cube__face{ background-color: #17C3B2; color:black}}
-.cube__show__right  { transform: translateZ(-$size/2) rotateY( -90deg); .cube__face{ background-color: #F5853F; color:black}}
-.cube__show__left   { transform: translateZ(-$size/2) rotateY(  90deg); .cube__face{ background-color: #5F00BA; color:white}}
-.cube__show__top    { transform: translateZ(-$size/2) rotateX( -90deg); .cube__face{ background-color: #BA274A; color:white}}
-.cube__show__bottom { transform: translateZ(-$size/2) rotateX(  90deg); .cube__face{ background-color: #275DAD; color:white}}
+.cube__show__front  { transform: translateZ(-$size/2) rotateY(   0deg); }
+.cube__show__back   { transform: translateZ(-$size/2) rotateY(-180deg); }
+.cube__show__right  { transform: translateZ(-$size/2) rotateY( -90deg); }
+.cube__show__left   { transform: translateZ(-$size/2) rotateY(  90deg); }
+.cube__show__top    { transform: translateZ(-$size/2) rotateX( -90deg); }
+.cube__show__bottom { transform: translateZ(-$size/2) rotateX(  90deg); }
 
