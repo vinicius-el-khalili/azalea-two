@@ -1,7 +1,8 @@
 import cubeSCSS from "@/components/cube/cube.module.scss"
 
-// --------- PALETTES --------- //
+// --------- Controllers --------- //
 
+const pages = ["Home","Projects","Blog","CV","Technologies","Contact"]
 
 // --------- CUBE --------- //
 
