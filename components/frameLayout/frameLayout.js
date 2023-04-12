@@ -19,7 +19,7 @@ const FrameLayout = ({children}) => {
         "Projects":     "#F4EEE0",
         "Blog":         "#F4EEE0",
         "CV":           "#F4EEE0",
-        "Technologies": "#F4EEE0",
+        "Technologies": "#576CBC",
         "Contact":      "#576CBC",
     }
     return (
