@@ -3,12 +3,14 @@
     width: 100%;
     position: fixed;
     padding: 2rem 10% 5rem 10%;
+    transition: .8s;
 
     .buttonsContainer{
         display: flex;
         justify-content: center;
         gap: .5rem;
         border: 2px solid black;
+        transition: .8s;
     }
 
     .pageContainer{

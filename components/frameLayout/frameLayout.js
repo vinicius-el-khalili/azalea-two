@@ -8,17 +8,25 @@ const FrameLayout = ({children}) => {
     const context = useContext(AppContext)
     const backgroundColorMap = {
         "Home":         "#F4EEE0",
+        "Projects":     "#393646",
+        "Blog":         "#393646",
+        "CV":           "#393646",
+        "Technologies": "#393646",
+        "Contact":      "#F4EEE0",
+    }
+    const borderColorMap = {
+        "Home":         "#F4EEE0",
         "Projects":     "#F4EEE0",
         "Blog":         "#F4EEE0",
         "CV":           "#F4EEE0",
         "Technologies": "#F4EEE0",
-        "Contact":      "#F4EEE0",
+        "Contact":      "#576CBC",
     }
     return (
         <>
         
         <div className={style.layoutContainer} style={{backgroundColor:backgroundColorMap[context.state.page]}}>
-            <div className={style.buttonsContainer}>
+            <div className={style.buttonsContainer} style={{borderColor:borderColorMap[context.state.page]}}>
                 <NavButtonCollection/>
             </div>
 
@@ -27,7 +35,7 @@ const FrameLayout = ({children}) => {
                 <div className={style.cube}>
                     <Cube/>
                 </div>
-                <div className={style.childrenContainer}>
+                <div className={style.childrenContainer} style={{borderColor:borderColorMap[context.state.page]}}>
                     {children}
                 </div>
             </div>
