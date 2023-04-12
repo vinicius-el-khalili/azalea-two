@@ -3,11 +3,11 @@ import { useContext, useState } from "react"
 import AppContext from "@/context/AppContext"
 import Link from "next/link"
 
-const NavButton = ({title,page,tag}) => {
+const NavButton = ({page}) => {
     const context = useContext(AppContext)
     const [hover,setHover] = useState(false)
     const handleClick = () => {
-        context.setPage(tag)
+        context.setPage(page)
     }
     const handleMouseEnter = () => {
         setHover(true)
@@ -19,16 +19,21 @@ const NavButton = ({title,page,tag}) => {
     return (
         <>
         
-            <Link className={style.link} href={page} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <div className={style.button} 
-                    style={
-                        hover ?
-                        context.layoutStyleMap.navButtonHoverStyle[context.state.page]
-                        :
-                        context.layoutStyleMap.navButtonStyle[context.state.page]
-                    }
-                        >
-                    {title}
+            <Link
+            className={style.link}
+            href={"/"+page.toLowerCase()}
+            onClick={handleClick}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
+                <div
+                className={style.button} 
+                style={
+                hover ?
+                context.layoutStyleMap.navButtonHoverStyle[context.state.page]
+                :
+                context.layoutStyleMap.navButtonStyle[context.state.page]
+                }>
+                    {page}
                 </div>
             </Link>
 
