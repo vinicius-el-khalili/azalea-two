@@ -12,12 +12,12 @@ const FrameLayout = ({children}) => {
         <div 
         className={style.layoutContainer}
         style={{backgroundColor:context.layoutStyleMap.backgroundColorMap[context.state.page]}}>
+            
             <div
             className={style.buttonsContainer}
             style={{borderColor:context.layoutStyleMap.borderColorMap[context.state.page]}}>
                 <NavButtonCollection/>
             </div>
-
 
             <div className={style.pageContainer}>
                 <div className={style.cube}>
