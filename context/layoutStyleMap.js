@@ -85,14 +85,6 @@ const layoutContainerStyle = {
     "Technologies": {backgroundColor:"salmon"},
     "Contact":      {backgroundColor:"salmon"},
 }
-const backgroundColorMap = {
-    "Home":         "#B2B2B2",
-    "Projects":     "#393646",
-    "Blog":         "#393646",
-    "CV":           "#393646",
-    "Technologies": "#393646",
-    "Contact":      "#F4EEE0",
-}
 
 // --------- NAVBUTTON --------- //
 
@@ -129,7 +121,6 @@ const layoutStyleMap = {
     layoutContainerStyle,
     childrenContainerStyle,
     buttonsContainerStyle,
-    backgroundColorMap,
     // cube
     cubeRotationMap,
     cubeFaceClassName,
