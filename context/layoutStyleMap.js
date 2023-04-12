@@ -1,5 +1,8 @@
 import cubeSCSS from "@/components/cube/cube.module.scss"
 
+// --------- PALETTES --------- //
+
+
 // --------- CUBE --------- //
 
 const cubeRotationMap = {
@@ -48,7 +51,7 @@ const cubeFaceStyle = {
 }
 
 // --------- LAYOUT --------- //
-
+ 
 const borderColorMap = {
     "Home":         "transparent",
     "Projects":     "#F4EEE0",
@@ -56,6 +59,15 @@ const borderColorMap = {
     "CV":           "#F4EEE0",
     "Technologies": "#576CBC",
     "Contact":      "#576CBC",
+}
+
+const childrenContainerStyle = {
+    "Home":         {borderColor:"red"},
+    "Projects":     {borderColor:"red"},
+    "Blog":         {borderColor:"red"},
+    "CV":           {borderColor:"red"},
+    "Technologies": {borderColor:"red"},
+    "Contact":      {borderColor:"red"},
 }
 
 const backgroundColorMap = {
@@ -100,6 +112,7 @@ const backgroundColorHoverMap = {
 const layoutStyleMap = {
     cubeRotationMap,
     borderColorMap,
+    childrenContainerStyle,
     backgroundColorMap,
     cubeFaceClassName,
     cubeFaceStyle,

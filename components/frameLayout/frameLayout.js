@@ -25,7 +25,7 @@ const FrameLayout = ({children}) => {
                 </div>
                 <div
                 className={style.childrenContainer}
-                style={{borderColor:context.layoutStyleMap.borderColorMap[context.state.page]}}>
+                style={context.layoutStyleMap.childrenContainerStyle[context.state.page]}>
                     {children}
                 </div>
             </div>
