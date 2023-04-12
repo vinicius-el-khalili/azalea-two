@@ -60,7 +60,6 @@ const borderColorMap = {
     "Technologies": "#576CBC",
     "Contact":      "#576CBC",
 }
-
 const childrenContainerStyle = {
     "Home":         {borderColor:"red"},
     "Projects":     {borderColor:"red"},
@@ -88,30 +87,21 @@ const layoutContainerStyle = {
 
 // --------- NAVBUTTON --------- //
 
-const fontColorMap = {
-    "Home":         "black",
-    "Projects":     "blue",
-    "Blog":         "green",
-    "CV":           "black",
-    "Technologies": "black",
-    "Contact":      "black",
+const navButtonStyle = {
+    "Home":         {color:"black"},
+    "Projects":     {color:"black"},
+    "Blog":         {color:"black"},
+    "CV":           {color:"black"},
+    "Technologies": {color:"black"},
+    "Contact":      {color:"black"},
 }
-
-const fontColorHoverMap = {
-    "Home":         "blue",
-    "Projects":     "blue",
-    "Blog":         "blue",
-    "CV":           "blue",
-    "Technologies": "blue",
-    "Contact":      "blue",
-}
-const backgroundColorHoverMap = {
-    "Home":         "green",
-    "Projects":     "green",
-    "Blog":         "green",
-    "CV":           "green",
-    "Technologies": "green",
-    "Contact":      "green",
+const navButtonHoverStyle = {
+    "Home":         {color:"white",backgroundColor:"black"},
+    "Projects":     {color:"white",backgroundColor:"black"},
+    "Blog":         {color:"white",backgroundColor:"black"},
+    "CV":           {color:"white",backgroundColor:"black"},
+    "Technologies": {color:"white",backgroundColor:"black"},
+    "Contact":      {color:"white",backgroundColor:"black"},
 }
 
 // --------- export --------- //
@@ -126,9 +116,8 @@ const layoutStyleMap = {
     cubeFaceClassName,
     cubeFaceStyle,
     // buttons
-    fontColorMap,
-    fontColorHoverMap,
-    backgroundColorHoverMap,
+    navButtonStyle,
+    navButtonHoverStyle,
 }
 
 

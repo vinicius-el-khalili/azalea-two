@@ -21,10 +21,12 @@ const NavButton = ({title,page,tag}) => {
         
             <Link className={style.link} href={page} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <div className={style.button} 
-                    style={{
-                        color: hover?context.layoutStyleMap.fontColorHoverMap[context.state.page]:context.layoutStyleMap.fontColorMap[context.state.page],
-                        backgroundColor: hover?context.layoutStyleMap.backgroundColorHoverMap[context.state.page]:""
-                        }}
+                    style={
+                        hover ?
+                        context.layoutStyleMap.navButtonHoverStyle[context.state.page]
+                        :
+                        context.layoutStyleMap.navButtonStyle[context.state.page]
+                    }
                         >
                     {title}
                 </div>
