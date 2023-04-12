@@ -8,9 +8,20 @@ const cubeRotationMap = {
     "Technologies":cubeSCSS.cube__show__top,
     "Contact":cubeSCSS.cube__show__bottom,
 }
+const borderColorMap = {
+    "Home":         "#F4EEE0",
+    "Projects":     "#F4EEE0",
+    "Blog":         "#F4EEE0",
+    "CV":           "#F4EEE0",
+    "Technologies": "#576CBC",
+    "Contact":      "#576CBC",
+}
+
 
 const layoutStyleMap = {
-    cubeRotationMap
+    cubeRotationMap,
+    borderColorMap,
 }
+
 
 export default layoutStyleMap
