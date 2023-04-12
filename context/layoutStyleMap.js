@@ -1,5 +1,6 @@
 import cubeSCSS from "@/components/cube/cube.module.scss"
 
+
 // --------- CUBE --------- //
 
 const cubeRotationMap = {
