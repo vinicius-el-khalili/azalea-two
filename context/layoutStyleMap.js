@@ -66,6 +66,17 @@ const backgroundColorMap = {
     "Contact":      "#F4EEE0",
 }
 
+// --------- NAVBUTTON --------- //
+
+const fontColorMap = {
+    "Home":         "red",
+    "Projects":     "blue",
+    "Blog":         "green",
+    "CV":           "black",
+    "Technologies": "black",
+    "Contact":      "black",
+}
+
 // --------- export --------- //
 
 const layoutStyleMap = {
@@ -74,6 +85,7 @@ const layoutStyleMap = {
     backgroundColorMap,
     cubeFaceClassName,
     cubeFaceStyle,
+    fontColorMap,
 }
 
 

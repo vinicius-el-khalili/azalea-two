@@ -4,7 +4,6 @@ import AppContext from "@/context/AppContext"
 import Link from "next/link"
 
 const NavButton = ({title,page,tag}) => {
-    
     const context = useContext(AppContext)
     const [hover,setHover] = useState(false)
     const handleClick = () => {
@@ -15,14 +14,6 @@ const NavButton = ({title,page,tag}) => {
     }
     const handleMouseLeave = () => {
         setHover(false)
-    }
-    const fontColorMap = {
-        "Home":         "red",
-        "Projects":     "blue",
-        "Blog":         "green",
-        "CV":           "black",
-        "Technologies": "black",
-        "Contact":      "black",
     }
     const fontColorHoverMap = {
         "Home":         "blue",
@@ -46,7 +37,7 @@ const NavButton = ({title,page,tag}) => {
             <Link className={style.link} href={page} onClick={handleClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <div className={style.button} 
                     style={{
-                        color: hover?fontColorHoverMap[context.state.page]:fontColorMap[context.state.page],
+                        color: hover?fontColorHoverMap[context.state.page]:context.layoutStyleMap.fontColorMap[context.state.page],
                         backgroundColor: hover?backgroundColorHoverMap[context.state.page]:""
                         }}
                         >
