@@ -77,7 +77,14 @@ const buttonsContainerStyle = {
     "Technologies": {borderColor:"pink"},
     "Contact":      {borderColor:"pink"},
 }
-
+const layoutContainerStyle = {
+    "Home":         {backgroundColor:"salmon"},
+    "Projects":     {backgroundColor:"salmon"},
+    "Blog":         {backgroundColor:"salmon"},
+    "CV":           {backgroundColor:"salmon"},
+    "Technologies": {backgroundColor:"salmon"},
+    "Contact":      {backgroundColor:"salmon"},
+}
 const backgroundColorMap = {
     "Home":         "#B2B2B2",
     "Projects":     "#393646",
@@ -118,13 +125,16 @@ const backgroundColorHoverMap = {
 // --------- export --------- //
 
 const layoutStyleMap = {
-    cubeRotationMap,
-    borderColorMap,
+    // layout
+    layoutContainerStyle,
     childrenContainerStyle,
     buttonsContainerStyle,
     backgroundColorMap,
+    // cube
+    cubeRotationMap,
     cubeFaceClassName,
     cubeFaceStyle,
+    // buttons
     fontColorMap,
     fontColorHoverMap,
     backgroundColorHoverMap,

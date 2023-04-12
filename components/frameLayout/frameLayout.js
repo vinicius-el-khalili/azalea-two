@@ -11,8 +11,7 @@ const FrameLayout = ({children}) => {
         
         <div 
         className={style.layoutContainer}
-        style={{backgroundColor:context.layoutStyleMap.backgroundColorMap[context.state.page]}}>
-            
+        style={context.layoutStyleMap.layoutContainerStyle[context.state.page]}>
             <div
             className={style.buttonsContainer}
             style={context.layoutStyleMap.buttonsContainerStyle[context.state.page]}>
