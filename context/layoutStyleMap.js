@@ -32,7 +32,7 @@ const cubeFaceStyle = {}
 cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",border:"4px solid black"},
 cubeFaceStyle[pages[1]]={backgroundColor:aquaForest[0],color:"black"}
 cubeFaceStyle[pages[2]]={backgroundColor:"black",color:"white",border:"1px solid white",boxShadow:"0 0 15px #700B97",textShadow: "0px 0px 2px #B9EDDD",fontSize:"1.8rem"}
-cubeFaceStyle[pages[3]]={background: "rgba(50, 50, 50,.95)",color:warmOrange[3],borderRadius:"100%",marginLeft:"110px"}
+cubeFaceStyle[pages[3]]={background: "rgba(50, 50, 50,.95)",color:warmOrange[3],borderRadius:"100%",marginLeft:"110px",boxShadow:"0 0 15px black"}
 cubeFaceStyle[pages[4]]={backgroundColor:"#BA274A",color:"white"}
 cubeFaceStyle[pages[5]]={backgroundColor:"#275DAD",color:"white"}
 
@@ -65,7 +65,7 @@ const childrenContainerStyle = {}
 childrenContainerStyle[pages[0]]={backgroundColor:darkPastel[2]}
 childrenContainerStyle[pages[1]]={backgroundColor:aquaForest[3]}
 childrenContainerStyle[pages[2]]={border:"1px solid white",boxShadow:"0 0 15px #700B97, inset 0 0 15px #700B97"}
-childrenContainerStyle[pages[3]]={backgroundColor:warmOrange[2],borderRadius:"150px 10px 150px 10px"}
+childrenContainerStyle[pages[3]]={backgroundColor:warmOrange[2],borderRadius:"150px 10px 150px 10px",boxShadow:"0 0 5px black"}
 childrenContainerStyle[pages[4]]={}
 childrenContainerStyle[pages[5]]={}
 
