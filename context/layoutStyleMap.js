@@ -32,11 +32,11 @@ const cubeFaceStyle = {}
 cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",border:"4px solid black"},
 cubeFaceStyle[pages[1]]={backgroundColor:aquaForest[0],color:"black"}
 cubeFaceStyle[pages[2]]={backgroundColor:"black",color:"white",border:"1px solid white",boxShadow:"0 0 15px #700B97",textShadow: "0px 0px 2px #B9EDDD",fontSize:"1.8rem"}
-cubeFaceStyle[pages[3]]={background: "rgba(50, 50, 50,1)",color:warmOrange[3],borderRadius:"100%",marginLeft:"110px",boxShadow:"0 0 15px black"}
+cubeFaceStyle[pages[3]]={background: "rgba(50, 50, 50,1)",color:warmOrange[3],borderRadius:"100%",marginLeft:"110px",boxShadow:"0 0 15px black", transition:"0s"}
 cubeFaceStyle[pages[4]]={backgroundColor:"#BA274A",color:"white"}
 cubeFaceStyle[pages[5]]={backgroundColor:"#275DAD",color:"white"}
 
-cubeFaceStyle["transparentBox"] = {background: warmOrange[3],color:"transparent",border:"none",height:"0",marginTop:"120px",borderRadius:"60px",transition:".5s"}
+cubeFaceStyle["transparentBox"] = {background: "none",color:"transparent",border:"none"}
 
 // --------- LAYOUT --------- //
  
