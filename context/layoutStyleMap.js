@@ -32,11 +32,11 @@ const cubeFaceStyle = {}
 cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",border:"4px solid black"},
 cubeFaceStyle[pages[1]]={backgroundColor:aquaForest[0],color:"black"}
 cubeFaceStyle[pages[2]]={backgroundColor:"black",color:"white",border:"1px solid white",boxShadow:"0 0 15px #700B97",textShadow: "0px 0px 2px #B9EDDD",fontSize:"1.8rem"}
-cubeFaceStyle[pages[3]]={background: "rgba(255, 255, 0, 0.1)"}
+cubeFaceStyle[pages[3]]={background: "rgba(0, 0, 0, 0.85)",color:warmOrange[3],borderWidth:"2px",borderRadius:"100%"}
 cubeFaceStyle[pages[4]]={backgroundColor:"#BA274A",color:"white"}
 cubeFaceStyle[pages[5]]={backgroundColor:"#275DAD",color:"white"}
 
-cubeFaceStyle["transparentBox"] = {background: "rgba(255, 255, 0, 0.1)",color:"transparent"}
+cubeFaceStyle["transparentBox"] = {background: "rgba(0, 0, 0, 0)",color:"transparent",border:"2px solid transparent"}
 
 // --------- LAYOUT --------- //
  
@@ -56,7 +56,7 @@ const buttonsContainerStyle = {}
 buttonsContainerStyle[pages[0]]={}
 buttonsContainerStyle[pages[1]]={}
 buttonsContainerStyle[pages[2]]={}
-buttonsContainerStyle[pages[3]]={backgroundColor:warmOrange[3]}
+buttonsContainerStyle[pages[3]]={backgroundColor:warmOrange[2]}
 buttonsContainerStyle[pages[4]]={}
 buttonsContainerStyle[pages[5]]={}
 
@@ -65,7 +65,7 @@ const childrenContainerStyle = {}
 childrenContainerStyle[pages[0]]={backgroundColor:darkPastel[2]}
 childrenContainerStyle[pages[1]]={backgroundColor:aquaForest[3]}
 childrenContainerStyle[pages[2]]={border:"1px solid white",boxShadow:"0 0 15px #700B97, inset 0 0 15px #700B97"}
-childrenContainerStyle[pages[3]]={backgroundColor:warmOrange[2]}
+childrenContainerStyle[pages[3]]={backgroundColor:"transparent"}
 childrenContainerStyle[pages[4]]={}
 childrenContainerStyle[pages[5]]={}
 
