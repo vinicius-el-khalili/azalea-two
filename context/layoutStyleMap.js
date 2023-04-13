@@ -4,6 +4,11 @@ import cubeSCSS from "@/components/cube/cube.module.scss"
 
 const pages = ["Home","Projects","Technologies","CV","About","Contact"]
 
+// --------- Palettes --------- //
+
+const darkPastel = ["#F4EEE0","#6D5D6E","#4F4557","#393646"]
+const aquaForest = ["#E7F6F2","#A5C9CA","#395B64","#2C3333"]
+
 // --------- CUBE --------- //
 
 var cubeRotationMap = {}
@@ -24,7 +29,7 @@ cubeFaceClassName[pages[5]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__botto
 
 const cubeFaceStyle = {}
 cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",borderColor:"transparent"},
-cubeFaceStyle[pages[1]]={backgroundColor:"#17C3B2",color:"black"}
+cubeFaceStyle[pages[1]]={backgroundColor:aquaForest[0],color:"black"}
 cubeFaceStyle[pages[2]]={backgroundColor:"#F5853F",color:"black"}
 cubeFaceStyle[pages[3]]={backgroundColor:"#5F00BA",color:"white",boxShadow:"0 0 20px #B9EDDD"}
 cubeFaceStyle[pages[4]]={backgroundColor:"#BA274A",color:"white"}
@@ -32,15 +37,19 @@ cubeFaceStyle[pages[5]]={backgroundColor:"#275DAD",color:"white"}
 
 // --------- LAYOUT --------- //
  
-const childrenContainerStyle = {}
-childrenContainerStyle[pages[0]]={borderColor:"red"}
-childrenContainerStyle[pages[1]]={borderColor:"red"}
-childrenContainerStyle[pages[2]]={borderColor:"red"}
-childrenContainerStyle[pages[3]]={borderColor:"red"}
-childrenContainerStyle[pages[4]]={borderColor:"red"}
-childrenContainerStyle[pages[5]]={borderColor:"red"}
+
+
+const layoutContainerStyle = {}
+
+layoutContainerStyle[pages[0]]={backgroundColor:darkPastel[0]}
+layoutContainerStyle[pages[1]]={backgroundColor:aquaForest[1]}
+layoutContainerStyle[pages[2]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[3]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[4]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[5]]={backgroundColor:"salmon"}
 
 const buttonsContainerStyle = {}
+
 buttonsContainerStyle[pages[0]]={borderColor:"pink"}
 buttonsContainerStyle[pages[1]]={borderColor:"pink"}
 buttonsContainerStyle[pages[2]]={borderColor:"pink"}
@@ -48,13 +57,14 @@ buttonsContainerStyle[pages[3]]={borderColor:"pink"}
 buttonsContainerStyle[pages[4]]={borderColor:"pink"}
 buttonsContainerStyle[pages[5]]={borderColor:"pink"}
 
-const layoutContainerStyle = {}
-layoutContainerStyle[pages[0]]={backgroundColor:"salmon"}
-layoutContainerStyle[pages[1]]={backgroundColor:"salmon"}
-layoutContainerStyle[pages[2]]={backgroundColor:"salmon"}
-layoutContainerStyle[pages[3]]={backgroundColor:"salmon"}
-layoutContainerStyle[pages[4]]={backgroundColor:"salmon"}
-layoutContainerStyle[pages[5]]={backgroundColor:"salmon"}
+const childrenContainerStyle = {}
+
+childrenContainerStyle[pages[0]]={backgroundColor:darkPastel[2]}
+childrenContainerStyle[pages[1]]={backgroundColor:aquaForest[3]}
+childrenContainerStyle[pages[2]]={borderColor:"red"}
+childrenContainerStyle[pages[3]]={borderColor:"red"}
+childrenContainerStyle[pages[4]]={borderColor:"red"}
+childrenContainerStyle[pages[5]]={borderColor:"red"}
 
 // --------- NAVBUTTON --------- //
 
@@ -67,7 +77,7 @@ navButtonStyle[pages[4]]={color:"black"}
 navButtonStyle[pages[5]]={color:"black"}
 
 const navButtonHoverStyle = {}
-navButtonHoverStyle[pages[0]]={color:"green",backgroundColor:"black"}
+navButtonHoverStyle[pages[0]]={color:"white",backgroundColor:darkPastel[3]}
 navButtonHoverStyle[pages[1]]={color:"white",backgroundColor:"black"}
 navButtonHoverStyle[pages[2]]={color:"white",backgroundColor:"black"}
 navButtonHoverStyle[pages[3]]={color:"white",backgroundColor:"black"}
