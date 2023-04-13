@@ -10,6 +10,7 @@ const darkPastel = ["#F4EEE0","#6D5D6E","#4F4557","#393646"]
 const aquaForest = ["#E7F6F2","#A5C9CA","#395B64","#2C3333"]
 const darkConsole = ["#2A0944","#5F00BA","#8E05C2"]
 const warmOrange = ["#454545","#FFE6C7","#FFA559","#FF6000"]
+const pdfRed = ["#BA274A","#F9F5EB","#E4DCCF"]
 // --------- CUBE --------- //
 
 var cubeRotationMap = {}
@@ -33,8 +34,8 @@ cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",border:"4px solid
 cubeFaceStyle[pages[1]]={backgroundColor:aquaForest[0],color:"black"}
 cubeFaceStyle[pages[2]]={backgroundColor:"black",color:"white",border:"1px solid white",boxShadow:"0 0 15px #700B97",textShadow: "0px 0px 2px #B9EDDD",fontSize:"1.8rem"}
 cubeFaceStyle[pages[3]]={background: "rgba(50, 50, 50,1)",color:warmOrange[3],borderRadius:"100%",marginLeft:"110px",boxShadow:"0 0 15px black", transition:"0s"}
-cubeFaceStyle[pages[4]]={backgroundColor:"#BA274A",color:"white"}
-cubeFaceStyle[pages[5]]={backgroundColor:"#275DAD",color:"white"}
+cubeFaceStyle[pages[4]]={backgroundColor:pdfRed[1],color:pdfRed[0],borderColor:pdfRed[0]}
+cubeFaceStyle[pages[5]]={backgroundColor:"#47597E",color:"white",color:"white"}
 
 cubeFaceStyle["transparentBox"] = {background: "none",color:"transparent",border:"none"}
 
@@ -48,8 +49,8 @@ layoutContainerStyle[pages[0]]={backgroundColor:darkPastel[0]}
 layoutContainerStyle[pages[1]]={backgroundColor:aquaForest[1]}
 layoutContainerStyle[pages[2]]={backgroundColor:"black"}
 layoutContainerStyle[pages[3]]={backgroundColor:warmOrange[1]}
-layoutContainerStyle[pages[4]]={backgroundColor:"salmon"}
-layoutContainerStyle[pages[5]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[4]]={backgroundColor:pdfRed[1]}
+layoutContainerStyle[pages[5]]={backgroundColor:"#DBE6FD"}
 
 const buttonsContainerStyle = {}
 
@@ -67,7 +68,7 @@ childrenContainerStyle[pages[1]]={backgroundColor:aquaForest[3]}
 childrenContainerStyle[pages[2]]={border:"1px solid white",boxShadow:"0 0 15px #700B97, inset 0 0 15px #700B97"}
 childrenContainerStyle[pages[3]]={backgroundColor:warmOrange[1],borderRadius:"150px 10px 150px 10px",boxShadow:"0 0 5px black"}
 childrenContainerStyle[pages[4]]={}
-childrenContainerStyle[pages[5]]={}
+childrenContainerStyle[pages[5]]={backgroundColor:"#293B5F",borderRadius:"30px"}
 
 // --------- NAVBUTTON --------- //
 
@@ -84,7 +85,7 @@ navButtonHoverStyle[pages[0]]={color:"white",backgroundColor:darkPastel[3]}
 navButtonHoverStyle[pages[1]]={color:"white",backgroundColor:"black"}
 navButtonHoverStyle[pages[2]]={color:"white",boxShadow:"0 0 5px white",borderRadius:"6px"}
 navButtonHoverStyle[pages[3]]={color:"white",backgroundColor:"black"}
-navButtonHoverStyle[pages[4]]={color:"white",backgroundColor:"black"}
+navButtonHoverStyle[pages[4]]={color:"white",backgroundColor:pdfRed[0],borderRadius:"10px"}
 navButtonHoverStyle[pages[5]]={color:"white",backgroundColor:"black"}
 
 // --------- export --------- //
