@@ -2,12 +2,13 @@ import cubeSCSS from "@/components/cube/cube.module.scss"
 
 // --------- Controllers --------- //
 
-const pages = ["Home","Projects","Technologies","CV","About","Contact"]
+const pages = ["Home","About","Technologies","Projects","CV","Contact"]
 
 // --------- Palettes --------- //
 
 const darkPastel = ["#F4EEE0","#6D5D6E","#4F4557","#393646"]
 const aquaForest = ["#E7F6F2","#A5C9CA","#395B64","#2C3333"]
+const darkConsole = ["#2A0944","#5F00BA","#8E05C2"]
 
 // --------- CUBE --------- //
 
@@ -28,10 +29,10 @@ cubeFaceClassName[pages[4]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__top}`
 cubeFaceClassName[pages[5]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__bottom}`
 
 const cubeFaceStyle = {}
-cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",borderColor:"transparent"},
+cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",border:"4px solid black"},
 cubeFaceStyle[pages[1]]={backgroundColor:aquaForest[0],color:"black"}
-cubeFaceStyle[pages[2]]={backgroundColor:"#F5853F",color:"black"}
-cubeFaceStyle[pages[3]]={backgroundColor:"#5F00BA",color:"white",boxShadow:"0 0 20px #B9EDDD"}
+cubeFaceStyle[pages[2]]={backgroundColor:"black",color:"white",boxShadow:"0 0 10px #B9EDDD",textShadow: "0px 0px 5px #B9EDDD",fontSize:"1.8rem"}
+cubeFaceStyle[pages[3]]={backgroundColor:"#5F00BA",color:"white",borderRadius:"100%",opacity:".95",border:"3px solid white"}
 cubeFaceStyle[pages[4]]={backgroundColor:"#BA274A",color:"white"}
 cubeFaceStyle[pages[5]]={backgroundColor:"#275DAD",color:"white"}
 
@@ -43,7 +44,7 @@ const layoutContainerStyle = {}
 
 layoutContainerStyle[pages[0]]={backgroundColor:darkPastel[0]}
 layoutContainerStyle[pages[1]]={backgroundColor:aquaForest[1]}
-layoutContainerStyle[pages[2]]={backgroundColor:"salmon"}
+layoutContainerStyle[pages[2]]={backgroundColor:"black"}
 layoutContainerStyle[pages[3]]={backgroundColor:"salmon"}
 layoutContainerStyle[pages[4]]={backgroundColor:"salmon"}
 layoutContainerStyle[pages[5]]={backgroundColor:"salmon"}
@@ -61,17 +62,17 @@ const childrenContainerStyle = {}
 
 childrenContainerStyle[pages[0]]={backgroundColor:darkPastel[2]}
 childrenContainerStyle[pages[1]]={backgroundColor:aquaForest[3]}
-childrenContainerStyle[pages[2]]={borderColor:"red"}
-childrenContainerStyle[pages[3]]={borderColor:"red"}
-childrenContainerStyle[pages[4]]={borderColor:"red"}
-childrenContainerStyle[pages[5]]={borderColor:"red"}
+childrenContainerStyle[pages[2]]={border:"1px solid white",boxShadow:"0 0 15px #700B97, inset 0 0 15px #700B97"}
+childrenContainerStyle[pages[3]]={}
+childrenContainerStyle[pages[4]]={}
+childrenContainerStyle[pages[5]]={}
 
 // --------- NAVBUTTON --------- //
 
 const navButtonStyle = {}
 navButtonStyle[pages[0]]={color:"black"}
 navButtonStyle[pages[1]]={color:"black"}
-navButtonStyle[pages[2]]={color:"black"}
+navButtonStyle[pages[2]]={color:"white"}
 navButtonStyle[pages[3]]={color:"black"}
 navButtonStyle[pages[4]]={color:"black"}
 navButtonStyle[pages[5]]={color:"black"}
@@ -79,7 +80,7 @@ navButtonStyle[pages[5]]={color:"black"}
 const navButtonHoverStyle = {}
 navButtonHoverStyle[pages[0]]={color:"white",backgroundColor:darkPastel[3]}
 navButtonHoverStyle[pages[1]]={color:"white",backgroundColor:"black"}
-navButtonHoverStyle[pages[2]]={color:"white",backgroundColor:"black"}
+navButtonHoverStyle[pages[2]]={color:"white",boxShadow:"0 0 5px lightgreen",borderRadius:"12px"}
 navButtonHoverStyle[pages[3]]={color:"white",backgroundColor:"black"}
 navButtonHoverStyle[pages[4]]={color:"white",backgroundColor:"black"}
 navButtonHoverStyle[pages[5]]={color:"white",backgroundColor:"black"}
