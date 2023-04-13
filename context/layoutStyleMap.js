@@ -32,11 +32,11 @@ const cubeFaceStyle = {}
 cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",border:"4px solid black"},
 cubeFaceStyle[pages[1]]={backgroundColor:aquaForest[0],color:"black"}
 cubeFaceStyle[pages[2]]={backgroundColor:"black",color:"white",border:"1px solid white",boxShadow:"0 0 15px #700B97",textShadow: "0px 0px 2px #B9EDDD",fontSize:"1.8rem"}
-cubeFaceStyle[pages[3]]={background: "rgba(0, 0, 0, 0.85)",color:warmOrange[3],borderWidth:"2px",borderRadius:"100%"}
+cubeFaceStyle[pages[3]]={background: "rgba(50, 50, 50,.95)",color:warmOrange[3],borderRadius:"100%",marginLeft:"110px"}
 cubeFaceStyle[pages[4]]={backgroundColor:"#BA274A",color:"white"}
 cubeFaceStyle[pages[5]]={backgroundColor:"#275DAD",color:"white"}
 
-cubeFaceStyle["transparentBox"] = {background: "rgba(0, 0, 0, 0)",color:"transparent",border:"2px solid transparent"}
+cubeFaceStyle["transparentBox"] = {background: "rgba(150, 150, 0,.5)",color:"transparent",border:"0px solid orange",height:"0",marginTop:"120px",borderRadius:"60px"}
 
 // --------- LAYOUT --------- //
  
@@ -56,7 +56,7 @@ const buttonsContainerStyle = {}
 buttonsContainerStyle[pages[0]]={}
 buttonsContainerStyle[pages[1]]={}
 buttonsContainerStyle[pages[2]]={}
-buttonsContainerStyle[pages[3]]={backgroundColor:warmOrange[2]}
+buttonsContainerStyle[pages[3]]={}
 buttonsContainerStyle[pages[4]]={}
 buttonsContainerStyle[pages[5]]={}
 
@@ -65,7 +65,7 @@ const childrenContainerStyle = {}
 childrenContainerStyle[pages[0]]={backgroundColor:darkPastel[2]}
 childrenContainerStyle[pages[1]]={backgroundColor:aquaForest[3]}
 childrenContainerStyle[pages[2]]={border:"1px solid white",boxShadow:"0 0 15px #700B97, inset 0 0 15px #700B97"}
-childrenContainerStyle[pages[3]]={backgroundColor:"transparent"}
+childrenContainerStyle[pages[3]]={backgroundColor:warmOrange[2],borderRadius:"150px 10px 150px 10px"}
 childrenContainerStyle[pages[4]]={}
 childrenContainerStyle[pages[5]]={}
 
@@ -82,7 +82,7 @@ navButtonStyle[pages[5]]={color:"black"}
 const navButtonHoverStyle = {}
 navButtonHoverStyle[pages[0]]={color:"white",backgroundColor:darkPastel[3]}
 navButtonHoverStyle[pages[1]]={color:"white",backgroundColor:"black"}
-navButtonHoverStyle[pages[2]]={color:"white",boxShadow:"0 0 5px white",borderRadius:"12px"}
+navButtonHoverStyle[pages[2]]={color:"white",boxShadow:"0 0 5px white",borderRadius:"6px"}
 navButtonHoverStyle[pages[3]]={color:"white",backgroundColor:"black"}
 navButtonHoverStyle[pages[4]]={color:"white",backgroundColor:"black"}
 navButtonHoverStyle[pages[5]]={color:"white",backgroundColor:"black"}
