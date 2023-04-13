@@ -53,12 +53,12 @@ layoutContainerStyle[pages[5]]={backgroundColor:"salmon"}
 
 const buttonsContainerStyle = {}
 
-buttonsContainerStyle[pages[0]]={}
-buttonsContainerStyle[pages[1]]={}
-buttonsContainerStyle[pages[2]]={}
-buttonsContainerStyle[pages[3]]={}
-buttonsContainerStyle[pages[4]]={}
-buttonsContainerStyle[pages[5]]={}
+buttonsContainerStyle[pages[0]]={borderTop:"2px solid black"}
+buttonsContainerStyle[pages[1]]={borderTop:"2px solid black"}
+buttonsContainerStyle[pages[2]]={borderTop:"2px solid black"}
+buttonsContainerStyle[pages[3]]={borderTop:"2px solid black"}
+buttonsContainerStyle[pages[4]]={borderTop:"2px solid black"}
+buttonsContainerStyle[pages[5]]={borderTop:"2px solid black"}
 
 const childrenContainerStyle = {}
 
