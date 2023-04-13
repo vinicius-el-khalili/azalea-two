@@ -7,7 +7,17 @@ const CubeFace = ({page,children}) => {
         <>
         
         <div
-        style={context.layoutStyleMap.cubeFaceStyle[context.state.page]}
+        style={
+            context.state.page == context.layoutStyleMap.pages[3]
+            ?
+                page == context.layoutStyleMap.pages[3]
+                ?
+                context.layoutStyleMap.cubeFaceStyle[context.state.page]
+                :
+                context.layoutStyleMap.cubeFaceStyle["transparentBox"]
+            :
+            context.layoutStyleMap.cubeFaceStyle[context.state.page]
+        }
         className={context.layoutStyleMap.cubeFaceClassName[page]}>
             {children}
         </div>

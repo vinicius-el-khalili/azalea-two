@@ -11,11 +11,8 @@ const Cube = () => {
 
     <div
     className={style.scene}>        
-        <div
-        className={`${style.cube} ${context.layoutStyleMap.cubeRotationMap[context.state.page]}`}>
-            
-            {
-            context.layoutStyleMap.pages.map( page => (
+        <div className={`${style.cube} ${context.layoutStyleMap.cubeRotationMap[context.state.page]}`}>
+            {context.layoutStyleMap.pages.map( page => (
                 <CubeFace page={page} key={"cubeface_"+page}>
                     {
                         page=="Home"?
@@ -23,8 +20,7 @@ const Cube = () => {
                         page
                     }
                 </CubeFace>
-                ))
-            }
+            ))}
             
         </div>
     </div>

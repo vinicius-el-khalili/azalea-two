@@ -32,7 +32,9 @@
             width: 100%;
             overflow: scroll;
             transition: .8s;
-
+            display: grid;
+            place-items: center;
+            color: transparent;
         }
     }
 }
