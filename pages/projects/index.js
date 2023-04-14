@@ -12,6 +12,11 @@ const Projects = () => {
         
             <div className={style.pageContainer}>
                 <h1>Projects</h1>
+                <p>Catatouille: Next, Contentful, Sass </p>                
+                <p>Jukebox Prototype: Next, Sass </p>
+                <p>Responsive Layouts: Next, Sass </p>
+                <p>Chess board: react, sass</p>
+                
             </div>
         
         </>

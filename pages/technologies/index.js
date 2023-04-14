@@ -20,10 +20,9 @@ const Technologies = () => {
             <h1 className={style.header}>
                 Front end
             </h1>
-
             <div className={style.iconsContainer}>
-                <NeonSVG target={"css"} shadowColor={"#33a9ec"}/>
                 <NeonSVG target={"html"} shadowColor={"#F16529"}/>
+                <NeonSVG target={"css"} shadowColor={"#33a9ec"}/>
                 <NeonSVG target={"javascript"} shadowColor={"yellow"}/>
                 <NeonSVG target={"react"} shadowColor={"blue"}/>
                 <NeonSVG target={"sass"} shadowColor={"magenta"}/>
@@ -35,9 +34,9 @@ const Technologies = () => {
                 Back end
             </h1>
             <div className={style.iconsContainer}>
-                <NeonSVG target={"node"}        shadowColor={"darkgreen"}/>
-                <NeonSVG target={"mongodb"}     shadowColor={"darkgreen"}/>
-                <NeonSVG target={"express"}     shadowColor={"green"}/>
+                <NeonSVG target={"node"}    shadowColor={"darkgreen"}/>
+                <NeonSVG target={"mongodb"} shadowColor={"darkgreen"}/>
+                <NeonSVG target={"express"} shadowColor={"green"}/>
             </div>
 
 
