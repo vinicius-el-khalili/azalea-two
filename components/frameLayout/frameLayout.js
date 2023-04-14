@@ -27,7 +27,6 @@ const FrameLayout = ({children}) => {
                 className={style.childrenContainer}
                 style={context.layoutStyleMap.childrenContainerStyle[context.state.page]}>
                     {children}
-                    <Cube/>
                 </div>
             </div>
 
