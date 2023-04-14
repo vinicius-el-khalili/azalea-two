@@ -17,7 +17,7 @@ const NeonSVG = ({target,shadowColor}) => {
         width= {100}
         height={100}
         style={{
-            filter: `drop-shadow(0px 0px 10px ${hover?"lightblue":shadowColor})`
+            filter: `drop-shadow(0px 0px ${hover?"3px":"10px"} ${shadowColor})`
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

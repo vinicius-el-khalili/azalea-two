@@ -16,18 +16,41 @@ const Technologies = () => {
         <>
         
         <div className={style.layout}>
+            
+            <h1 className={style.header}>
+                Front end
+            </h1>
+
             <div className={style.iconsContainer}>
                 <NeonSVG target={"css"} shadowColor={"#33a9ec"}/>
                 <NeonSVG target={"html"} shadowColor={"#F16529"}/>
-                <NeonSVG target={"javascript"} shadowColor={"white"}/>
+                <NeonSVG target={"javascript"} shadowColor={"yellow"}/>
                 <NeonSVG target={"react"} shadowColor={"blue"}/>
                 <NeonSVG target={"sass"} shadowColor={"magenta"}/>
-                <NeonSVG target={"next"} shadowColor={"lightblue"}/>
+                <NeonSVG target={"next"} shadowColor={"white"}/>
+            </div>
+            
+            
+            <h1 className={style.header}>
+                Back end
+            </h1>
+            <div className={style.iconsContainer}>
                 <NeonSVG target={"node"} shadowColor={"darkgreen"}/>
                 <NeonSVG target={"mongodb"} shadowColor={"darkgreen"}/>
-                <NeonSVG target={"typescript"} shadowColor={"#007ACC"}/>
-            
+                <NeonSVG target={"express"} shadowColor={"green"}/>
             </div>
+
+
+            <h1 className={style.header}>
+                Toolsw
+            </h1>
+            <div className={style.iconsContainer}>
+                <NeonSVG target={"typescript"} shadowColor={"#007ACC"}/>
+                <NeonSVG target={"postman"} shadowColor={"orange"}/>
+                <NeonSVG target={"figma"} shadowColor={"salmon"}/>
+            </div>
+
+            
         </div>
         
         </>
