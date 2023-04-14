@@ -12,6 +12,7 @@ const FrameLayout = ({children}) => {
         <div 
         className={style.layoutContainer}
         style={context.layoutStyleMap.layoutContainerStyle[context.state.page]}>
+
             <div
             className={style.buttonsContainer}
             style={context.layoutStyleMap.buttonsContainerStyle[context.state.page]}>
@@ -26,6 +27,7 @@ const FrameLayout = ({children}) => {
                 className={style.childrenContainer}
                 style={context.layoutStyleMap.childrenContainerStyle[context.state.page]}>
                     {children}
+                    <Cube/>
                 </div>
             </div>
 
