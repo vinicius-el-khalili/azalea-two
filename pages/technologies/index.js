@@ -42,7 +42,7 @@ const Technologies = () => {
 
 
             <h1 className={style.header}>
-                Toolsw
+                Dev Tools
             </h1>
             <div className={style.iconsContainer}>
                 <NeonSVG target={"typescript"} shadowColor={"#007ACC"}/>
@@ -50,7 +50,18 @@ const Technologies = () => {
                 <NeonSVG target={"figma"} shadowColor={"salmon"}/>
             </div>
 
-            
+            <h1 className={style.header}>
+                Data Science
+            </h1>
+            <div className={style.iconsContainer}>
+                <NeonSVG target={"python"}      shadowColor={"white"}/>
+                <NeonSVG target={"scipy"}       shadowColor={"white"}/>
+                <NeonSVG target={"numpy"}       shadowColor={"white"}/>
+                <NeonSVG target={"pandas"}      shadowColor={"white"}/>
+                <NeonSVG target={"scikitlearn"} shadowColor={"white"}/>
+                <NeonSVG target={"matplotlib"}  shadowColor={"white"}/>
+            </div>
+
         </div>
         
         </>
