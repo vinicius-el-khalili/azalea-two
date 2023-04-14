@@ -24,6 +24,7 @@ const Technologies = () => {
                 <NeonSVG target={"sass"} shadowColor={"magenta"}/>
                 <NeonSVG target={"next"} shadowColor={"lightblue"}/>
                 <NeonSVG target={"node"} shadowColor={"darkgreen"}/>
+                <NeonSVG target={"mongodb"} shadowColor={"darkgreen"}/>
             
             </div>
         </div>
