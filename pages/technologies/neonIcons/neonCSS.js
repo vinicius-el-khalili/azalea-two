@@ -9,7 +9,7 @@ const NeonCSS = ({size}) => {
         width={size}
         height={size}
         style={{
-            filter: "drop-shadow(0px 0px 10px #33a9dc)"
+            filter: "drop-shadow(0px 0px 10px #33a9ec)"
         }}
         />
         
