@@ -4,8 +4,7 @@ import AppContext from "@/context/AppContext";
 
 import style from "./technologies.module.scss"
 
-import NeonCSS from "./neonIcons/neonCSS";
-import NeonSVG from "./neonIcons/neonSVG";
+import NeonSVG from "@/components/neonSVG/neonSVG";
 
 const Technologies = () => {
     const context = useContext(AppContext)
