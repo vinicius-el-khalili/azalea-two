@@ -9,13 +9,15 @@ const Slider = () => {
     
     const [currentCard,setCurrentCard] = useState(1)
 
+    function handleSlideButtonClick(side){
+        console.log(`Sliding to the ${side}`)
+    }
+
     return ( 
 
         <>
         
-        <SliderButton side={"left"}/>
-
-
+        <SliderButton side={"left"} handleSlideButtonClick={handleSlideButtonClick}/>
         <div className={style.sliderContainer}>
 
             <SliderCard content={"Card #1"} cardNumber={0} currentCard={currentCard} />
@@ -23,8 +25,7 @@ const Slider = () => {
             <SliderCard content={"Card #3"} cardNumber={2} currentCard={currentCard} />
 
         </div>
-
-        <SliderButton side={"right"}/>
+        <SliderButton side={"right"} handleSlideButtonClick={handleSlideButtonClick}/>
         
         </>
 

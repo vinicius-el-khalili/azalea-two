@@ -1,17 +1,17 @@
 import style from "../slider.module.scss"
 
-const SliderButton = ({side}) => {
+const SliderButton = ({ side, handleSlideButtonClick }) => {
     return ( 
         <>
 
         <div 
         className = {
-            side === "right"
-            ?
-            `${style.sliderButton} ${style.right}`
-            :
+            side === "right" ?
+            `${style.sliderButton} ${style.right}` :
             `${style.sliderButton} ${style.left}`
-        } />
+            } 
+        onClick={ ()  => { handleSlideButtonClick(side) } }
+        />
 
         </>
      );
