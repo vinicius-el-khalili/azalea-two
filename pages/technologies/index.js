@@ -46,6 +46,8 @@ const Technologies = () => {
                 <NeonSVG target={"typescript"}  shadowColor={"#007ACC"}/>
                 <NeonSVG target={"postman"}     shadowColor={"orange"}/>
                 <NeonSVG target={"figma"}       shadowColor={"salmon"}/>
+                <NeonSVG target={"git"}         shadowColor={"white"}/>
+                <NeonSVG target={"github"}      shadowColor={"white"}/>
             </div>
 
             <h1 className={style.header}>
