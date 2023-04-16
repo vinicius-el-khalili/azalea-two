@@ -1,4 +1,51 @@
+//*  slider  *//
+
 .sliderContainer{
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 12px;
+
+}
+
+//*  sliderCard  *//
+
+.cardContainer{
+    
+    width: 150px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background: #00000055;
+    display: grid;
+    place-items: center;
+    
+}
+
+.minimizeCard {
+ 
+    width: 120px;
+    height: 200px;
+
+}
+
+//*  sliderButton  *//
+
+.sliderButton {
+    
+    border: 5px solid black;
+    border-right: 0;
+    border-top: 0;
+    width:  35px;
+    height: 35px;
+
+}
+
+.left {
+    transform: rotate(45deg);
+}
+
+.right{
+    transform: rotate(-135deg);
 }

@@ -1,10 +1,24 @@
-import style from "./sliderCard.module.scss"
+import style from "../slider.module.scss"
 
-const SliderCard = ({content}) => {
+const SliderCard = ({
+    content,
+    cardNumber,
+    currentCard
+}) => {
+
     return ( 
         <>
         
-        <div className={style.cardContainer}>{content}</div>
+        <div
+        className={
+            cardNumber !== currentCard 
+            ?
+            `${style.cardContainer} ${style.minimizeCard}` 
+            :
+            style.cardContainer }>
+            
+            {content}
+        </div>
         
         </>
      );
