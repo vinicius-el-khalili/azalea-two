@@ -11,11 +11,16 @@ const SliderCard = ({
         
         <div
         className={
-            cardNumber !== currentCard 
+            cardNumber === currentCard 
             ?
-            `${style.cardContainer} ${style.minimizeCard}` 
+            `${style.cardContainer} ${style.mainCard}`
             :
-            style.cardContainer }>
+                cardNumber === currentCard+1 || cardNumber === currentCard-1
+                ?
+                `${style.cardContainer} ${style.minimizeCard}`
+                :
+                `${style.cardContainer} ${style.invisible} ${style.minimizeCard}`
+            }>
             
             {content}
         </div>

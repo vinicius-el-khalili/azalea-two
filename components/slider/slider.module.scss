@@ -1,32 +1,74 @@
+//* variables *//
+
+$cardWidth: 150px;
+$cardHeight: 250px;
+$miniCardWidth: 120px;
+$miniCardHeight: 200px;
+
+
 //*  slider  *//
 
-.sliderContainer{
+.mainLayout{
 
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 12px;
+    
+}
+
+.cardCollectionContainer{
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: $cardHeight;
+    
+}
+
+.frame{
+    position: relative;
+    box-sizing: content-box;
+    border: 1px solid green;
+    overflow: hidden;
+    width: $miniCardWidth+$cardWidth;
+    height: $cardHeight;
+    padding-left: $miniCardWidth;
 
 }
 
 //*  sliderCard  *//
 
 .cardContainer{
-    
-    width: 150px;
-    height: 250px;
+
+    width: $cardWidth;
+    height: $cardHeight;
     border: 1px solid black;
     border-radius: 1rem;
     background: #00000055;
     display: grid;
     place-items: center;
-    
+    transition: .3s;
+
 }
 
 .minimizeCard {
- 
+    
     width: 120px;
     height: 200px;
+    transition: .7s;
+    background-color: cornflowerblue;
+
+}
+
+.mainCard {
+    
+    background-color: salmon;
+
+}
+
+.invisible{
+    
+    opacity: 0;
 
 }
 
