@@ -1,0 +1,30 @@
+.layoutWrapper{
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto 1fr;
+
+    .navBarWrapper{
+        
+        grid-column: span 6;
+
+    }
+
+    .cubeWrapper{
+
+        grid-column: span 2;
+        height: calc(100vh - 9.5rem);
+        display: grid;
+        place-items: center;
+
+    }
+
+    .childrenWrapper{
+
+        grid-column: span 4;
+        display: flex;
+        justify-content: center;
+        height: calc(100vh - 9.5rem);
+        overflow: scroll;
+    }
+}

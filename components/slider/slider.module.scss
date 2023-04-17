@@ -12,6 +12,7 @@ $miniCardHeight: 200px;
 
     display: grid;
     width: fit-content;
+    height: fit-content;
     grid-template-columns: 4rem $cardWidth+2*$miniCardWidth 4rem;
     grid-template-rows: auto auto;
     align-items: center;

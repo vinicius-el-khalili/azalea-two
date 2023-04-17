@@ -11,10 +11,14 @@ const Layout = ({children}) => {
         <LayoutContainer>
             <div className={style.layoutWrapper}>
 
-                <div className={style.navBarWrapper}><NavBar/></div>
-                <div className={style.cubeWrapper}><Cube/></div>
+                <div className={style.navBarWrapper}>
+                    <NavBar/></div>
 
-                <div className={style.childrenWrapper}>{children}</div>
+                <div className={style.cubeWrapper}>
+                    <Cube/></div>
+
+                <div className={style.childrenWrapper}>
+                    {children}</div>
 
             </div>
         </LayoutContainer>
