@@ -18,7 +18,7 @@ const SliderBar = ({numberOfCards, currentCard}) => {
     return ( 
         <>
         
-        <div className={style.slideBar}>
+        <div className={style.slideBarContainer}>
             {dots}
         </div>
         

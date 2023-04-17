@@ -21,9 +21,9 @@ export default function App({ Component, pageProps }) {
       layoutStyleMap
     }}>
 
-    <FrameLayout>
+    <Layout>
       <Component {...pageProps} />
-    </FrameLayout>
+    </Layout>
 
   </AppContext.Provider> 
 
