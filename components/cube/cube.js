@@ -23,12 +23,11 @@ const Cube = () => {
                             <div className={style.typedWords}>
                                 <TypedWords texts={[
 
-                                    "LEARN",
-                                    "REFINE",
-                                    "CREATE",
-                                    "REPEAT"
+                                    "learn",
+                                    "create",
+                                    "repeat"
 
-                                ]}/>
+                                ]}/>{"_"}
                             </div>
                             </>
                         ):
