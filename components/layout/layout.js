@@ -1,5 +1,5 @@
 import NavBar from "./navBar/navBar";
-import NavFrame from "./navFrame/navFrame";
+import NavFrame from "./layoutContainer/layoutContainer";
 import Cube from "../cube/cube";
 
 const Layout = ({children}) => {

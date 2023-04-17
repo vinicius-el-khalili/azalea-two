@@ -43,17 +43,6 @@ cubeFaceStyle["transparentBox"] = {background: "none",color:"transparent",border
 
 // --------- LAYOUT --------- //
  
-
-
-const layoutContainerStyle = {}
-
-layoutContainerStyle[pages[0]]={backgroundColor:"#454545"}
-layoutContainerStyle[pages[1]]={backgroundColor:"#454545"}
-layoutContainerStyle[pages[2]]={backgroundColor:"#454545"}
-layoutContainerStyle[pages[3]]={backgroundColor:"#454545"}
-layoutContainerStyle[pages[4]]={backgroundColor:"#454545"}
-layoutContainerStyle[pages[5]]={backgroundColor:"#454545"}
-
 const buttonsContainerStyle = {}
 
 buttonsContainerStyle[pages[0]]={borderTop:"2px solid black"}
@@ -63,14 +52,14 @@ buttonsContainerStyle[pages[3]]={borderTop:"2px solid black"}
 buttonsContainerStyle[pages[4]]={borderTop:"2px solid black"}
 buttonsContainerStyle[pages[5]]={borderTop:"2px solid black"}
 
-const childrenContainerStyle = {}
+const layoutContainerStyle = {}
 
-childrenContainerStyle[pages[0]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem white"}
-childrenContainerStyle[pages[1]]={borderRadius:"1rem", border:"1px solid #8BF5FA",boxShadow:"0 0 1rem #8BF5FA"}
-childrenContainerStyle[pages[2]]={borderRadius:"1rem", border:"1px solid #F8F988",boxShadow:"0 0 1rem #F8F988"}
-childrenContainerStyle[pages[3]]={borderRadius:"1rem", border:"1px solid #FF8D29",boxShadow:"0 0 1rem #FF8D29"}
-childrenContainerStyle[pages[4]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem white"}
-childrenContainerStyle[pages[5]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem #0096FF"}
+layoutContainerStyle[pages[0]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem white"}
+layoutContainerStyle[pages[1]]={borderRadius:"1rem", border:"1px solid #8BF5FA",boxShadow:"0 0 1rem #8BF5FA"}
+layoutContainerStyle[pages[2]]={borderRadius:"1rem", border:"1px solid #F8F988",boxShadow:"0 0 1rem #F8F988"}
+layoutContainerStyle[pages[3]]={borderRadius:"1rem", border:"1px solid #FF8D29",boxShadow:"0 0 1rem #FF8D29"}
+layoutContainerStyle[pages[4]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem white"}
+layoutContainerStyle[pages[5]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem #0096FF"}
 
 // --------- NAVBUTTON --------- //
 
@@ -96,7 +85,6 @@ const layoutStyleMap = {
     pages,
     // layout
     layoutContainerStyle,
-    childrenContainerStyle,
     buttonsContainerStyle,
     // cube
     cubeRotationMap,
