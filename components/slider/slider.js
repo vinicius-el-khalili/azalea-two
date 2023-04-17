@@ -15,14 +15,10 @@ const Slider = () => {
     function handleSlideButtonClick(side){
 
         if (side === "right"){
-            if(currentCard+1 < numberOfCards){
-                setCurrentCard(currentCard+1)
-            }
-        }else{
-            if (currentCard-1 >= 0){
-                setCurrentCard(currentCard-1)
-            }
+            if(currentCard+1 < numberOfCards){setCurrentCard(currentCard+1)}
+            }else{ if (currentCard-1 >= 0){setCurrentCard(currentCard-1) }
         }
+
     }
 
     return ( 
@@ -32,7 +28,6 @@ const Slider = () => {
             <SliderButton side={"left"} handleSlideButtonClick={handleSlideButtonClick}/>
             <div
             className={style.frame}>
-
                 <div 
                 className={style.cardCollectionContainer}
                 style={{
