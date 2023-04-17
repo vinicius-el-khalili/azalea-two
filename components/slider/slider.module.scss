@@ -12,7 +12,6 @@ $miniCardHeight: 200px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    border: 1px solid black;
     border-radius: 2rem;
     padding: 4.5rem 2rem 2.5rem 2rem;
 }
@@ -32,6 +31,8 @@ $miniCardHeight: 200px;
     width: $miniCardWidth+$cardWidth;
     height: $cardHeight;
     padding-left: $miniCardWidth;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 //*  sliderCard  *//
@@ -39,9 +40,9 @@ $miniCardHeight: 200px;
 .cardContainer{
     width: $cardWidth;
     height: $cardHeight;
-    border: 1px solid black;
     border-radius: 1rem;
-    background: #00000055;
+    background: #2D2727;
+    color: white;
     display: grid;
     place-items: center;
     transition: .3s;
@@ -50,23 +51,21 @@ $miniCardHeight: 200px;
 .minimizeCard {
     width: 120px;
     height: 200px;
+    opacity: .3;
     transition: .7s;
-    background-color: cornflowerblue;
 }
 
 .minimizeRight{ 
-    background-color: paleturquoise;
     transform: translateX(-$miniCardWidth/2);
 }
 
 .minimizeLeft { 
-    background-color: slateblue; 
     transform: translateX($miniCardWidth/2);
 }
 
 .mainCard {
-    background-color: salmon;
     z-index: 1;
+    box-shadow: 0 0 5px white;
 }
 
 .invisible{
@@ -77,7 +76,7 @@ $miniCardHeight: 200px;
 
 .sliderButton {
     
-    border: 5px solid black;
+    border: 12px solid white;
     border-right: 0;
     border-top: 0;
     width:  35px;

@@ -32,12 +32,12 @@ cubeFaceClassName[pages[4]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__top}`
 cubeFaceClassName[pages[5]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__bottom}`
 
 const cubeFaceStyle = {}
-cubeFaceStyle[pages[0]]={backgroundColor:"white",color:"black",border:"4px solid black"},
-cubeFaceStyle[pages[1]]={backgroundColor:"#454545",color:"white",border:"1px solid white",boxShadow:"0 0 15px white"}
-cubeFaceStyle[pages[2]]={backgroundColor:"#454545",color:"white",border:"1px solid white",boxShadow:"0 0 15px white",fontSize:"1.8rem"}
-cubeFaceStyle[pages[3]]={backgroundColor:"#454545",color:"white",border:"1px solid white",boxShadow:"0 0 15px white",borderRadius:"100%",marginLeft:"110px", transition:"0s"}
-cubeFaceStyle[pages[4]]={backgroundColor:pdfRed[1],color:pdfRed[0],borderColor:pdfRed[0]}
-cubeFaceStyle[pages[5]]={backgroundColor:deepBlue[0],color:"white",color:"white"}
+cubeFaceStyle[pages[0]]={backgroundColor:"#454545",color:"white",border:"1px solid white",boxShadow:"0 0 5px white"}
+cubeFaceStyle[pages[1]]={backgroundColor:"#454545",color:"white",border:"1px solid #8BF5FA",boxShadow:"0 0 5px #8BF5FA"}
+cubeFaceStyle[pages[2]]={backgroundColor:"#454545",color:"white",border:"1px solid #F8F988",boxShadow:"0 0 5px #F8F988",fontSize:"1.8rem"}
+cubeFaceStyle[pages[3]]={backgroundColor:"#454545",color:"white",border:"1px solid #FF8D29",boxShadow:"0 0 25px #FF8D29",borderRadius:"100%",marginLeft:"110px", transition:"0s"}
+cubeFaceStyle[pages[4]]={backgroundColor:"#454545",color:"white",border:"1px solid white",boxShadow:"0 0 5px white"}
+cubeFaceStyle[pages[5]]={backgroundColor:"#454545",color:"white",border:"1px solid #0096FF",boxShadow:"0 0 5px #0096FF"}
 
 cubeFaceStyle["transparentBox"] = {background: "none",color:"transparent",border:"none"}
 
@@ -65,12 +65,12 @@ buttonsContainerStyle[pages[5]]={borderTop:"2px solid black"}
 
 const childrenContainerStyle = {}
 
-childrenContainerStyle[pages[0]]={}
-childrenContainerStyle[pages[1]]={}
-childrenContainerStyle[pages[2]]={ border:"1px solid white",boxShadow:"0 0 5px white" }
-childrenContainerStyle[pages[3]]={ borderRadius:"150px 10px 150px 10px",boxShadow:"0 0 5px white"}
-childrenContainerStyle[pages[4]]={}
-childrenContainerStyle[pages[5]]={ borderRadius:"30px"}
+childrenContainerStyle[pages[0]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem white"}
+childrenContainerStyle[pages[1]]={borderRadius:"1rem", border:"1px solid #8BF5FA",boxShadow:"0 0 1rem #8BF5FA"}
+childrenContainerStyle[pages[2]]={borderRadius:"1rem", border:"1px solid #F8F988",boxShadow:"0 0 1rem #F8F988"}
+childrenContainerStyle[pages[3]]={borderRadius:"1rem", border:"1px solid #FF8D29",boxShadow:"0 0 1rem #FF8D29"}
+childrenContainerStyle[pages[4]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem white"}
+childrenContainerStyle[pages[5]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem #0096FF"}
 
 // --------- NAVBUTTON --------- //
 
