@@ -1,4 +1,4 @@
-import style from "../layout.module.scss"
+import style from "./layoutContainer.module.scss"
 import { useContext } from "react";
 import AppContext from "@/context/AppContext";
 
