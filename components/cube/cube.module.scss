@@ -32,16 +32,13 @@ $size: 220px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: .3rem;
+  gap: 1rem;
   background: #ffffffef;
   transition:.8s;
-  p{
-    &:nth-child(1){
-      font-size: 2rem;
-    }
-    &:nth-child(2){
-      font-size: 1rem;
-    }
+  .typedWords{
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
+
   }
 }
 

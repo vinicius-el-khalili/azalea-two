@@ -74,12 +74,12 @@ navButtonStyle[pages[5]]={color:"white"}
 navButtonStyle[pages[4]]={color:"white"}
 
 const navButtonHoverStyle = {}
-navButtonHoverStyle[pages[0]]={backgroundColor:"#2D2727",color:steveReich[0]}
-navButtonHoverStyle[pages[1]]={backgroundColor:"#2D2727",color:steveReich[1]}
-navButtonHoverStyle[pages[2]]={backgroundColor:"#2D2727",color:steveReich[2]}
-navButtonHoverStyle[pages[3]]={backgroundColor:"#2D2727",color:steveReich[3]}
-navButtonHoverStyle[pages[4]]={backgroundColor:"#2D2727",color:steveReich[4]}
-navButtonHoverStyle[pages[5]]={backgroundColor:"#2D2727",color:steveReich[5]}
+navButtonHoverStyle[pages[0]]={backgroundColor:"",color:steveReich[0]}
+navButtonHoverStyle[pages[1]]={backgroundColor:"",color:steveReich[1]}
+navButtonHoverStyle[pages[2]]={backgroundColor:"",color:steveReich[2]}
+navButtonHoverStyle[pages[3]]={backgroundColor:"",color:steveReich[3]}
+navButtonHoverStyle[pages[4]]={backgroundColor:"",color:steveReich[4]}
+navButtonHoverStyle[pages[5]]={backgroundColor:"",color:steveReich[5]}
 
 // --------- export --------- //
 

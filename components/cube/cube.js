@@ -1,7 +1,8 @@
-import { useState, useContext } from "react"
+import { useContext } from "react"
 import AppContext from "@/context/AppContext"
 import style from "./cube.module.scss"
 import CubeFace from "./cubeFace"
+import TypedWords from "../typedWords/typedWords"
 
 
 const Cube = () => {
@@ -16,7 +17,21 @@ const Cube = () => {
                 <CubeFace page={page} key={"cubeface_"+page}>
                     {
                         page=="Home"?
-                        (<><p>Vinicius El Khalili</p><p>Front end developer</p></>):
+                        (
+                            <>
+                            <p>Vinicius El Khalili</p>
+                            <div className={style.typedWords}>
+                                <TypedWords texts={[
+
+                                    "LEARN",
+                                    "REFINE",
+                                    "CREATE",
+                                    "REPEAT"
+
+                                ]}/>
+                            </div>
+                            </>
+                        ):
                         page
                     }
                 </CubeFace>
