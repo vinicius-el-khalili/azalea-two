@@ -1,5 +1,16 @@
+import style from "./contact.module.scss"
+
 const Contact = () => {
-    return ( <h1 style={{color:"white"}}>Contact</h1> );
+    return (
+        <>
+        
+        <div className={style.layout}>
+
+            <h1>About</h1>
+        </div>
+        
+        </>
+    );
 }
  
 export default Contact;

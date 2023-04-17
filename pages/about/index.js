@@ -1,5 +1,12 @@
+import style from "./about.module.scss"
+
 const About = () => {
-    return ( <h1 style={{color:"white"}}>About</h1> );
+    return ( 
+    <div className={style.layout}>
+
+        <h1>About</h1>
+
+    </div> );
 }
  
 export default About;
