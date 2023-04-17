@@ -60,9 +60,24 @@ $miniCardHeight: 200px;
 
 }
 
+.minimizeRight{ 
+
+    background-color: paleturquoise;
+    transform: translateX(-$miniCardWidth/2);
+
+}
+
+.minimizeLeft { 
+
+    background-color: slateblue; 
+    transform: translateX($miniCardWidth/2);
+
+}
+
 .mainCard {
     
     background-color: salmon;
+    z-index: 1;
 
 }
 

@@ -17,9 +17,13 @@ const SliderCard = ({
             :
                 cardNumber === currentCard+1 || cardNumber === currentCard-1
                 ?
-                `${style.cardContainer} ${style.minimizeCard}`
+                    cardNumber === currentCard+1
+                    ?
+                    `${style.cardContainer} ${style.minimizeCard} ${style.minimizeRight}`
+                    :
+                    `${style.cardContainer} ${style.minimizeCard} ${style.minimizeLeft}`
                 :
-                `${style.cardContainer} ${style.invisible} ${style.minimizeCard}`
+                    `${style.cardContainer} ${style.invisible} ${style.minimizeCard}`
             }>
             
             {content}
