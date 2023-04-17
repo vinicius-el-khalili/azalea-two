@@ -27,7 +27,7 @@ const Cube = () => {
                                     "create",
                                     "repeat"
 
-                                ]}/>{"_"}
+                                ]}/>
                             </div>
                             </>
                         ):
