@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import SliderCard from "./sliderCard/sliderCard";
 import SliderButton from "./sliderButton.js/sliderButton";
+import SliderBar from "./sliderBar/sliderBar";
 
 const Slider = () => {
     
@@ -48,7 +49,8 @@ const Slider = () => {
                 </div>
             </div>
             <SliderButton side={"right"} handleSlideButtonClick={handleSlideButtonClick}/>
-        
+            <SliderBar numberOfCards={numberOfCards} currentCard={currentCard}/>
+
         </div>
 
      );

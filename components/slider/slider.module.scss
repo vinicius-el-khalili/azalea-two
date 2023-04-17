@@ -9,37 +9,34 @@ $miniCardHeight: 200px;
 //*  slider  *//
 
 .mainLayout{
-
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 4.5rem 2rem 2.5rem 2rem;
 }
 
 .cardCollectionContainer{
-
     position: absolute;
     display: flex;
     align-items: center;
     margin: auto;
     height: $cardHeight;
-    
 }
 
 .frame{
     position: relative;
     box-sizing: content-box;
-    border: 1px solid green;
     overflow: hidden;
     width: $miniCardWidth+$cardWidth;
     height: $cardHeight;
     padding-left: $miniCardWidth;
-
 }
 
 //*  sliderCard  *//
 
 .cardContainer{
-
     width: $cardWidth;
     height: $cardHeight;
     border: 1px solid black;
@@ -48,43 +45,32 @@ $miniCardHeight: 200px;
     display: grid;
     place-items: center;
     transition: .3s;
-
 }
 
 .minimizeCard {
-    
     width: 120px;
     height: 200px;
     transition: .7s;
     background-color: cornflowerblue;
-
 }
 
 .minimizeRight{ 
-
     background-color: paleturquoise;
     transform: translateX(-$miniCardWidth/2);
-
 }
 
 .minimizeLeft { 
-
     background-color: slateblue; 
     transform: translateX($miniCardWidth/2);
-
 }
 
 .mainCard {
-    
     background-color: salmon;
     z-index: 1;
-
 }
 
 .invisible{
-    
     opacity: 0;
-
 }
 
 //*  sliderButton  *//
@@ -105,4 +91,24 @@ $miniCardHeight: 200px;
 
 .right{
     transform: rotate(-135deg);
+}
+
+//* slideBar *//
+
+.slideBar{
+    display: flex;
+    margin: 3rem auto 0 auto;
+    grid-column: span 3;
+    gap: .5rem;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.dotHighlight{
+    background-color: mediumseagreen;
 }
