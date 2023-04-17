@@ -49,19 +49,19 @@ const Technologies = () => {
                 <NeonSVG target={"git"}         shadowColor={"white"}/>
                 <NeonSVG target={"github"}      shadowColor={"white"}/>
             </div>
-
-            <h1 className={style.header}>
-                Data Science
-            </h1>
-            <div className={style.iconsContainer}>
-                <NeonSVG target={"python"}      shadowColor={"white"}/>
-                <NeonSVG target={"scipy"}       shadowColor={"white"}/>
-                <NeonSVG target={"numpy"}       shadowColor={"white"}/>
-                <NeonSVG target={"pandas"}      shadowColor={"white"}/>
-                <NeonSVG target={"scikitlearn"} shadowColor={"white"}/>
-                <NeonSVG target={"matplotlib"}  shadowColor={"white"}/>
-            </div>
-
+{
+            //<h1 className={style.header}>
+            //    Data Science
+            //</h1>
+            //<div className={style.iconsContainer}>
+            //    <NeonSVG target={"python"}      shadowColor={"white"}/>
+            //    <NeonSVG target={"scipy"}       shadowColor={"white"}/>
+            //    <NeonSVG target={"numpy"}       shadowColor={"white"}/>
+            //    <NeonSVG target={"pandas"}      shadowColor={"white"}/>
+            //    <NeonSVG target={"scikitlearn"} shadowColor={"white"}/>
+            //    <NeonSVG target={"matplotlib"}  shadowColor={"white"}/>
+            //</div>
+}
         </div>
         
         </>
