@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import FrameLayout from '@/components/frameLayout/frameLayout'
+import Layout from '@/components/layout/layout'
 import layoutStyleMap from '@/context/layoutStyleMap'
 
 import { useState } from 'react'

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.link{
+    text-decoration: none;
+}
+
+.button{
+    padding: 8px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+}
