@@ -8,7 +8,8 @@ const CubeFace = ({page,children}) => {
         
         <div
         style={
-            context.state.page == context.layoutStyleMap.pages[3]
+            //context.state.page == context.layoutStyleMap.pages[3]
+            context.state.page == "disabled"
             ?
                 page == context.layoutStyleMap.pages[3]
                 ?

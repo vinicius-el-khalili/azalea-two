@@ -13,6 +13,8 @@ const warmOrange = ["#454545","#FFE6C7","#FFA559","#FF6000"]
 const pdfRed = ["#BA274A","#F9F5EB","#E4DCCF"]
 const deepBlue = ["#47597E","#DBE6FD","#293B5F"]
 
+const steveReich = ["white","#8BF5FA","#F8F988","#FFDCA9","#B3FFAE","#B1AFFF"]
+
 // --------- CUBE --------- //
 
 var cubeRotationMap = {}
@@ -32,12 +34,12 @@ cubeFaceClassName[pages[4]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__top}`
 cubeFaceClassName[pages[5]]=`${cubeSCSS.cube__face} ${cubeSCSS.cube__face__bottom}`
 
 const cubeFaceStyle = {}
-cubeFaceStyle[pages[0]]={backgroundColor:"#454545",color:"white",border:"1px solid white",boxShadow:"0 0 5px white"}
-cubeFaceStyle[pages[1]]={backgroundColor:"#454545",color:"white",border:"1px solid #8BF5FA",boxShadow:"0 0 5px #8BF5FA"}
-cubeFaceStyle[pages[2]]={backgroundColor:"#454545",color:"white",border:"1px solid #F8F988",boxShadow:"0 0 5px #F8F988",fontSize:"1.8rem"}
-cubeFaceStyle[pages[3]]={backgroundColor:"#454545",color:"white",border:"1px solid #FF8D29",boxShadow:"0 0 25px #FF8D29",borderRadius:"100%",marginLeft:"110px", transition:"0s"}
-cubeFaceStyle[pages[4]]={backgroundColor:"#454545",color:"white",border:"1px solid white",boxShadow:"0 0 5px white"}
-cubeFaceStyle[pages[5]]={backgroundColor:"#454545",color:"white",border:"1px solid #0096FF",boxShadow:"0 0 5px #0096FF"}
+cubeFaceStyle[pages[0]]={backgroundColor:"#454545",color:"white",border:"1px solid "+steveReich[0],boxShadow:"0 0 5px "+steveReich[0] }
+cubeFaceStyle[pages[1]]={backgroundColor:"#454545",color:"white",border:"1px solid "+steveReich[1],boxShadow:"0 0 5px "+steveReich[1] }
+cubeFaceStyle[pages[2]]={backgroundColor:"#454545",color:"white",border:"1px solid "+steveReich[2],boxShadow:"0 0 5px "+steveReich[2] ,fontSize:"1.8rem"}
+cubeFaceStyle[pages[3]]={backgroundColor:"#454545",color:"white",border:"2px solid white"         ,boxShadow:"0 0 5px "+steveReich[3] }
+cubeFaceStyle[pages[4]]={backgroundColor:"#454545",color:"white",border:"1px solid "+steveReich[4],boxShadow:"0 0 5px "+steveReich[4] }
+cubeFaceStyle[pages[5]]={backgroundColor:"#454545",color:"white",border:"1px solid white"         ,boxShadow:"0 0 5px "+steveReich[5] }
 
 cubeFaceStyle["transparentBox"] = {background: "none",color:"transparent",border:"none"}
 
@@ -45,21 +47,21 @@ cubeFaceStyle["transparentBox"] = {background: "none",color:"transparent",border
  
 const buttonsContainerStyle = {}
 
-buttonsContainerStyle[pages[0]]={borderTop:"2px solid black"}
-buttonsContainerStyle[pages[1]]={borderTop:"2px solid black"}
-buttonsContainerStyle[pages[2]]={borderTop:"2px solid black"}
-buttonsContainerStyle[pages[3]]={borderTop:"2px solid black"}
-buttonsContainerStyle[pages[4]]={borderTop:"2px solid black"}
-buttonsContainerStyle[pages[5]]={borderTop:"2px solid black"}
+buttonsContainerStyle[pages[0]]={}
+buttonsContainerStyle[pages[1]]={}
+buttonsContainerStyle[pages[2]]={}
+buttonsContainerStyle[pages[3]]={}
+buttonsContainerStyle[pages[4]]={}
+buttonsContainerStyle[pages[5]]={}
 
 const layoutContainerStyle = {}
 
-layoutContainerStyle[pages[0]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem white"}
-layoutContainerStyle[pages[1]]={borderRadius:"1rem", border:"1px solid #8BF5FA",boxShadow:"0 0 1rem #8BF5FA"}
-layoutContainerStyle[pages[2]]={borderRadius:"1rem", border:"1px solid #F8F988",boxShadow:"0 0 1rem #F8F988"}
-layoutContainerStyle[pages[3]]={borderRadius:"1rem", border:"1px solid #FF8D29",boxShadow:"0 0 1rem #FF8D29"}
-layoutContainerStyle[pages[4]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem white"}
-layoutContainerStyle[pages[5]]={borderRadius:"1rem", border:"1px solid gray",boxShadow:"0 0 1rem #0096FF"}
+layoutContainerStyle[pages[0]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveReich[0]}
+layoutContainerStyle[pages[1]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveReich[1]}
+layoutContainerStyle[pages[2]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveReich[2]}
+layoutContainerStyle[pages[3]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveReich[3]}
+layoutContainerStyle[pages[4]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveReich[4]}
+layoutContainerStyle[pages[5]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveReich[5]}
 
 // --------- NAVBUTTON --------- //
 
@@ -72,12 +74,12 @@ navButtonStyle[pages[5]]={color:"white"}
 navButtonStyle[pages[4]]={color:"white"}
 
 const navButtonHoverStyle = {}
-navButtonHoverStyle[pages[0]]={boxShadow:"0 0 5px black",color:"white",backgroundColor:darkPastel[3]}
-navButtonHoverStyle[pages[1]]={boxShadow:"0 0 5px black",color:"white",backgroundColor:aquaForest[3]}
-navButtonHoverStyle[pages[2]]={boxShadow:"0 0 5px black",color:"black",borderRadius:"6px"}
-navButtonHoverStyle[pages[3]]={boxShadow:"none",color:"white",backgroundColor:warmOrange[0],borderRadius:"16px 0px 16px 0px"}
-navButtonHoverStyle[pages[4]]={boxShadow:"0 0 5px black",color:"white",backgroundColor:pdfRed[0],borderRadius:"10px"}
-navButtonHoverStyle[pages[5]]={boxShadow:"0 0 5px black",color:"white",backgroundColor:deepBlue[2],borderRadius:"1rem"}
+navButtonHoverStyle[pages[0]]={backgroundColor:"#2D2727",color:steveReich[0]}
+navButtonHoverStyle[pages[1]]={backgroundColor:"#2D2727",color:steveReich[1]}
+navButtonHoverStyle[pages[2]]={backgroundColor:"#2D2727",color:steveReich[2]}
+navButtonHoverStyle[pages[3]]={backgroundColor:"#2D2727",color:steveReich[3]}
+navButtonHoverStyle[pages[4]]={backgroundColor:"#2D2727",color:steveReich[4]}
+navButtonHoverStyle[pages[5]]={backgroundColor:"#2D2727",color:steveReich[5]}
 
 // --------- export --------- //
 
