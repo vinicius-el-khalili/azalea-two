@@ -1,19 +1,23 @@
+import style from "./layout.module.scss"
+
 import NavBar from "./navBar/navBar";
-import NavFrame from "./layoutContainer/layoutContainer";
+import LayoutContainer from "./layoutContainer/layoutContainer";
 import Cube from "../cube/cube";
 
 const Layout = ({children}) => {
     return (
         <>
         
-        <NavFrame>
-            
-            <NavBar/>
-            <Cube/>
-            
-            {children}
+        <LayoutContainer>
+            <div className={style.layoutWrapper}>
 
-        </NavFrame>
+                <div className={style.navBarWrapper}><NavBar/></div>
+                <div className={style.cubeWrapper}><Cube/></div>
+
+                <div className={style.childrenWrapper}>{children}</div>
+
+            </div>
+        </LayoutContainer>
         
         </>
     );

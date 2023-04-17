@@ -9,7 +9,7 @@ const NavBar = () => {
         <>
 
         <div
-        className={style.main}
+        className={style.navBarContainer}
         style={context.layoutStyleMap.buttonsContainerStyle[context.state.page]}>
     
             {
