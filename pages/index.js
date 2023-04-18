@@ -13,7 +13,7 @@ export default function Home() {
           
           <TypedWords
           texts={[
-            `< >< / >`,
+            `<></>`,
             `{ ' ' : { } }`,
             `[ ... { } ]`,
             `? { } : { } `
