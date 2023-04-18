@@ -9,19 +9,18 @@ export default function Home() {
   return (
 
     <div className={style.mainContainer}>
+      <div className={style.typedWords}>
+          
+          <TypedWords
+          texts={[
+            `< >< / >`,
+            `{ ' ' : { } }`,
+            `[ ... { } ]`,
+            `? { } : { } `
+          ]}/>
 
-      <div
-      className={style.typedWords}
-      style={{
-        
-        fontSize:"4rem",
-        color:"white"
-         
-      }}>
-        
-          <TypedWords texts={["Wow","So cool","Much stuffness","Such suchness"]}/>
+
       </div>
-
     </div>
 
   )

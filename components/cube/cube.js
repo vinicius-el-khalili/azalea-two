@@ -16,7 +16,7 @@ const Cube = () => {
                 <CubeFace page={page} key={"cubeface_"+page}>
                     {
                         page=="Home"?
-                        (<><p>Vinicius El Khalili</p><p>Front end developer</p></>):
+                        (<><p>Vinicius El Khalili</p><p>../webDev</p></>):
                         page
                     }
                 </CubeFace>
