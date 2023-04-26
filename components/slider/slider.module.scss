@@ -1,6 +1,6 @@
 //* variables *//
 
-$cardWidth: 450px;
+$cardWidth: 400px;
 $cardHeight: 350px;
 $miniCardWidth: 120px;
 $miniCardHeight: 200px;
@@ -42,6 +42,7 @@ $miniCardHeight: 200px;
     padding-bottom: 5px;
     margin: auto;
 
+
 }
 
 //*  sliderCard  *//
@@ -56,6 +57,7 @@ $miniCardHeight: 200px;
     display: grid;
     place-items: center;
     transition: .3s;
+    overflow: hidden;
 
 }
 

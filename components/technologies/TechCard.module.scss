@@ -1,8 +1,11 @@
 .TechCardContainer{
 
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-weight: 1000;
-    width: fit-content;
+    gap:1rem;
     
 }
