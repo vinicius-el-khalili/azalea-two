@@ -6,10 +6,16 @@ import SliderCard from "./sliderCard/sliderCard";
 import SliderButton from "./sliderButton.js/sliderButton";
 import SliderBar from "./sliderBar/sliderBar";
 
-const Slider = () => {
+import TechCard from "../technologies/TechCard";
+
+const Slider = ({childrenList}) => {
     
     const [currentCard,setCurrentCard] = useState(0)
-    const numberOfCards = 5
+    const numberOfCards = childrenList.length
+    const cards = []
+    for (let i=0;i<numberOfCards;i++){
+        cards.push(<SliderCard key={`sc_${i}`} cardNumber={i} currentCard={currentCard}>{childrenList[i]}</SliderCard>)
+    }
     const miniCardWidth = 120
 
     function handleSlideButtonClick(side){
@@ -35,11 +41,7 @@ const Slider = () => {
                     transition: ".3s"
                 }}>
 
-                    <SliderCard content={"Card #1"} cardNumber={0} currentCard={currentCard} />
-                    <SliderCard content={"Card #2"} cardNumber={1} currentCard={currentCard} />
-                    <SliderCard content={"Card #3"} cardNumber={2} currentCard={currentCard} />
-                    <SliderCard content={"Card #4"} cardNumber={3} currentCard={currentCard} />
-                    <SliderCard content={"Card #5"} cardNumber={4} currentCard={currentCard} />
+                {cards}
                 
                 </div>
             </div>

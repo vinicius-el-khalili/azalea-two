@@ -1,10 +1,10 @@
-import Image from "next/image";
 import { useEffect, useContext } from "react";
 import AppContext from "@/context/AppContext";
 
 import style from "./technologies.module.scss"
 
 import NeonSVG from "@/components/neonSVG/neonSVG";
+import TechCard from "@/components/technologies/TechCard";
 
 const Technologies = () => {
     const context = useContext(AppContext)
@@ -16,16 +16,18 @@ const Technologies = () => {
         
         <div className={style.layout}>
             
+            
+
             <h1 className={style.header}>
                 Front end
             </h1>
             <div className={style.iconsContainer}>
-                <NeonSVG target={"html"} shadowColor={"#F16529"}/>
-                <NeonSVG target={"css"} shadowColor={"#33a9ec"}/>
-                <NeonSVG target={"javascript"} shadowColor={"yellow"}/>
-                <NeonSVG target={"react"} shadowColor={"blue"}/>
-                <NeonSVG target={"sass"} shadowColor={"magenta"}/>
-                <NeonSVG target={"next"} shadowColor={"white"}/>
+                <TechCard color={"orange"}  tech={"html"} title={"HTML"}/>
+                <TechCard color={"#33a9ec"} tech={"css"} title={"CSS"}/>
+                <TechCard color={"yellow"}  tech={"javascript"} title={"JavaScript"}/>
+                <TechCard color={"blue"}    tech={"react"} title={"React"}/>
+                <TechCard color={"magenta"} tech={"sass"} title={"Sass"}/>
+                <TechCard color={"white"}   tech={"next"} title={"Next"}/>
             </div>
             
             
@@ -33,35 +35,38 @@ const Technologies = () => {
                 Back end
             </h1>
             <div className={style.iconsContainer}>
-                <NeonSVG target={"node"}    shadowColor={"darkgreen"}/>
-                <NeonSVG target={"mongodb"} shadowColor={"darkgreen"}/>
-                <NeonSVG target={"express"} shadowColor={"green"}/>
+                <TechCard tech={"mongodb"} title = {"MongoDB"} color={"darkgreen"}/>
+                <TechCard tech={"node"}    title = {"Node"} color={"darkgreen"}/>
+                <TechCard tech={"express"} title = {"Express"} color={"green"}/>
             </div>
 
 
             <h1 className={style.header}>
-                Dev Tools
+                Tools
             </h1>
             <div className={style.iconsContainer}>
-                <NeonSVG target={"typescript"}  shadowColor={"#007ACC"}/>
-                <NeonSVG target={"postman"}     shadowColor={"orange"}/>
-                <NeonSVG target={"figma"}       shadowColor={"salmon"}/>
-                <NeonSVG target={"git"}         shadowColor={"white"}/>
-                <NeonSVG target={"github"}      shadowColor={"white"}/>
+                <TechCard tech={"postman"}     title = {"Postman"} color={"orange"}/>
+                <TechCard tech={"typescript"}  title = {"Typescript"} color={"#007ACC"}/>
+                <TechCard tech={"figma"}       title = {"Figma"} color={"salmon"}/>
+                <TechCard tech={"git"}         title = {"Git"} color={"white"}/>
+                <TechCard tech={"github"}      title = {"Github"} color={"white"}/>
+                <TechCard tech={"docker"}      title = {"Docker"} color={"lightblue"}/>
             </div>
-{
-            //<h1 className={style.header}>
-            //    Data Science
-            //</h1>
-            //<div className={style.iconsContainer}>
-            //    <NeonSVG target={"python"}      shadowColor={"white"}/>
-            //    <NeonSVG target={"scipy"}       shadowColor={"white"}/>
-            //    <NeonSVG target={"numpy"}       shadowColor={"white"}/>
-            //    <NeonSVG target={"pandas"}      shadowColor={"white"}/>
-            //    <NeonSVG target={"scikitlearn"} shadowColor={"white"}/>
-            //    <NeonSVG target={"matplotlib"}  shadowColor={"white"}/>
-            //</div>
-}
+
+            <h1 className={style.header}>
+                Data Science
+            </h1>
+
+            <div className={style.iconsContainer}>
+                <TechCard tech={"python"}      title={"Python"}      color={"lightblue"}/>
+                <TechCard tech={"scipy"}       title={"SciPy"}       color={"lightblue"}/>
+                <TechCard tech={"numpy"}       title={"Numpy"}       color={"lightblue"}/>
+                <TechCard tech={"pandas"}      title={"Pandas"}      color={"lightblue"}/>
+                <TechCard tech={"scikitlearn"} title={"Scikit-Learn"} color={"lightblue"}/>
+                <TechCard tech={"matplotlib"}  title={"Matplotlib"}  color={"lightblue"}/>
+                <TechCard tech={"jupyter"}     title={"Jupyter"}  color={"lightblue"}/>
+            </div>
+
         </div>
         
         </>

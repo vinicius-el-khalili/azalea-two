@@ -1,7 +1,7 @@
 import style from "../slider.module.scss"
 
 const SliderCard = ({
-    content,
+    children,
     cardNumber,
     currentCard
 }) => {
@@ -26,7 +26,7 @@ const SliderCard = ({
                     `${style.cardContainer} ${style.invisible} ${style.minimizeCard}`
             }>
             
-            {content}
+            {children}
         </div>
         
         </>
