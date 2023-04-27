@@ -1,7 +1,7 @@
 //* variables *//
 
-$cardWidth: 400px;
-$cardHeight: 350px;
+$cardWidth: 300px;
+$cardHeight: 380px;
 $miniCardWidth: 120px;
 $miniCardHeight: 200px;
 
@@ -54,8 +54,6 @@ $miniCardHeight: 200px;
     border-radius: 1rem;
     background: #2D2727;
     color: white;
-    display: grid;
-    place-items: center;
     transition: .3s;
     overflow: hidden;
 

@@ -1,5 +1,6 @@
-.pageContainer{
-    display: grid;
-    place-items: center;
-    color: white;
+.projectCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.4rem;
 }
