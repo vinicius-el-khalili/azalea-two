@@ -1,26 +1,55 @@
-.ProjectCard{
-    width: 100%;
-    height: 100%;
+$dark-bg: #454545;
+
+// Pastel shades
+$pastel-1: #E2C9A9;
+$pastel-2: #D4BFA3;
+$pastel-3: #C7B59D;
+$pastel-4: #B9AB97;
+
+.ProjectCard {
+    width: fit-content;
+    height: fit-content;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
     color: white;
-    .title{
-        background-color: #FFDCA9;
-        color: #454545;
+    border-radius: 12px;
+    background-color: #454545;
+    box-shadow: 0 0 10px #454545;
+    margin: 0 1rem 0 1rem;
+
+    .title {
+        font-size: 1.7rem;
+        color: $pastel-1;
         text-align: center;
-        padding: .5rem;
+        padding: 1rem 0 1rem 0;
+        border-radius: 12px 12px 0 0;
+        margin: 0 1rem 0 1rem;
     }
-    .description{
+
+    .image {
+        height: 150px;
+        position: relative;
+        background-color: rgba($color: #fff, $alpha: .5);
+    }
+
+    .description {
         white-space: pre-wrap;
         padding: 2rem;
+        max-width: 300px;
+        margin: auto;
     }
-    .links{
+
+    .links {
         display: flex;
         justify-content: space-around;
-        background-color: #454545;
-        .link{            
+        background-color: $pastel-1;
+        border-radius: 0 0 12px 12px;
+
+        .link {
             text-decoration: none;
-            color: #FFDCA9;
+            color: black;
+            font-size: 1.15rem;
+            padding: .2rem 0 .2rem 0;
         }
     }
 }

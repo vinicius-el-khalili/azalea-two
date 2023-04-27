@@ -13,9 +13,24 @@ const Projects = () => {
         
             <div className={style.projectCards}>
                 <ProjectCard
-                    title={"Project Card 101"}
-                    description={"\tLorem ipsum dolor, sit amet consectetur adipisicing elit.\n\tAmet illum at, excepturi cumque incidunt voluptatibus blanditiis quisquam cupiditate itaque dolorem facilis illo atque, enim error. Illo cupiditate laboriosam, laborum soluta natus aperiam."}
-                    links={{demo:"/",github:"/"}}
+                    title={"Recipe App"}
+                    description={"A website that displays different dish recipes and categories. The recipes are stored at a Contentful database, a user-friendly headless content management system."}
+                    links={{img:"/projects/catatouille.png",demo:"https://the-catatouille.vercel.app",github:"https://github.com/vinicius-el-khalili/catatouille"}}
+                />
+                <ProjectCard
+                    title={"Jukebox"}
+                    description={"A simple jukebox insipired by Spotify elements. Built with Next.js as a case-study for the Context API."}
+                    links={{img:"/projects/jukeboxPrototype.png",demo:"https://jukebox-prototype-coral.vercel.app",github:"https://github.com/vinicius-el-khalili/jukebox-prototype"}}
+                />
+                <ProjectCard
+                    title={"Responsive Layouts"}
+                    description={"Implementation of case-study responsive layouts with Next.js and SASS."}
+                    links={{img:"/projects/layouts.jpg",demo:"https://github.com/vinicius-el-khalili/Layouts",github:"https://github.com/vinicius-el-khalili/Layouts"}}
+                />
+                <ProjectCard
+                    title={"Chess board"}
+                    description={"A functional chess board built with React class components, TypeScript and 'chess.js' library, as a case-study for less declarative implementations of React component functionalities."}
+                    links={{img:"/projects/chess.png",demo:"https://vinicius-el-khalili.github.io/Chess-UI-tsc/",github:"https://github.com/vinicius-el-khalili/Chess-UI-tsc"}}
                 />
             </div>
         
