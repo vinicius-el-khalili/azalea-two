@@ -20,9 +20,29 @@
 
 .iconsContainer{
 
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
-    display: grid;
     justify-content: space-around;
     margin: auto;    
+
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:768px) {
+
+    .iconsContainer{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        
+    }
+    
+    .header {
+
+        font-size: 2.2rem;
+
+    }
 }
