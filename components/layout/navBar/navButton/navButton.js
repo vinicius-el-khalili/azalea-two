@@ -3,11 +3,13 @@ import { useContext, useState } from "react"
 import AppContext from "@/context/AppContext"
 import Link from "next/link"
 
-const NavButton = ({page}) => {
+const NavButton = ({page, setNavMenu}) => {
     const context = useContext(AppContext)
     const [hover,setHover] = useState(false)
     const handleClick = () => {
+        setNavMenu(false)
         context.setPage(page)
+
     }
     const handleMouseEnter = () => {
         setHover(true)

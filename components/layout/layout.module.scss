@@ -50,3 +50,30 @@
         
     }
 }
+
+/* Responsiveness */
+
+@media screen and (max-width:768px) {
+  .layoutWrapper{
+
+    display: flex;
+    flex-direction: column;
+
+
+    .cubeWrapper{
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .childrenWrapper{
+
+        display: flex;
+        height: calc(100vh - 7rem - 110px);
+        margin-top: 1rem;
+
+        
+    }
+}
+}

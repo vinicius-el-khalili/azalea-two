@@ -6,7 +6,7 @@ import style from "./navBar.module.scss"
 
 const NavBar = () => {
     const context = useContext(AppContext)
-    const [navMenu,setNavMenu] = useState(true)
+    const [navMenu,setNavMenu] = useState(false)
     return (
         <>
 
@@ -18,8 +18,12 @@ const NavBar = () => {
         
             {
                 context.layoutStyleMap.pages.map( page => (
-                    <NavButton page={page} key={"navbutton_"+page}/>
-                    ))
+                    <NavButton 
+                    page={page} 
+                    setNavMenu={setNavMenu}
+                    key={"navbutton_"+page}
+                    />
+                ))
             }
         </div>
         <NavMenuButton navMenu={navMenu} setNavMenu={setNavMenu} />
