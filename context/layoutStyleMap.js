@@ -63,6 +63,15 @@ layoutContainerStyle[pages[3]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveR
 layoutContainerStyle[pages[4]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveReich[4]}
 layoutContainerStyle[pages[5]]={borderRadius:"1rem",boxShadow:"0 0 1rem "+steveReich[5]}
 
+const childrenWrapperStyle = {}
+
+childrenWrapperStyle[pages[0]]={borderColor:steveReich[0]}
+childrenWrapperStyle[pages[1]]={borderColor:steveReich[1]}
+childrenWrapperStyle[pages[2]]={borderColor:steveReich[2]}
+childrenWrapperStyle[pages[3]]={borderColor:steveReich[3]}
+childrenWrapperStyle[pages[4]]={borderColor:steveReich[4]}
+childrenWrapperStyle[pages[5]]={borderColor:steveReich[5]}
+
 // --------- NAVBUTTON --------- //
 
 const navButtonStyle = {}
@@ -88,6 +97,7 @@ const layoutStyleMap = {
     // layout
     layoutContainerStyle,
     buttonsContainerStyle,
+    childrenWrapperStyle,
     // cube
     cubeRotationMap,
     cubeFaceClassName,

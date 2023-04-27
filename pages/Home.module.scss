@@ -2,10 +2,8 @@
 
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem;
+    padding: 4rem;
+    overflow: hidden;
 }
 
 .typedWords{
@@ -15,6 +13,21 @@
         80,
         80
     );
-    font-size: 12rem;
+    font-size: 1rem;
+    color: white;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
 
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:768px) {
+    .mainContainer{
+        padding: 1rem;
+        padding-top: 10rem;
+    }
+    .typedWords{
+        font-size: 1rem;
+    }
 }

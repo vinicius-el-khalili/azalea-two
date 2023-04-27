@@ -4,7 +4,11 @@ import NavBar from "./navBar/navBar";
 import LayoutContainer from "./layoutContainer/layoutContainer";
 import Cube from "../cube/cube";
 
+import { useContext } from "react";
+import AppContext from "@/context/AppContext";
+
 const Layout = ({children}) => {
+    const context = useContext(AppContext)
     return (
         <>
         
@@ -17,7 +21,10 @@ const Layout = ({children}) => {
                 <div className={style.cubeWrapper}>
                     <Cube/></div>
 
-                <div className={style.childrenWrapper}>
+                <div
+                className={style.childrenWrapper}
+                style={context.layoutStyleMap.childrenWrapperStyle[context.state.page]}
+                >
                     {children}</div>
 
             </div>

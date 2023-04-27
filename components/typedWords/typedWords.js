@@ -41,7 +41,7 @@ class TypedWords extends React.Component{
         while (true){
             this.setState({current:this.props.texts[i]})
             await this.write()
-            await delay(700,()=>{})
+            await delay(1000,()=>{})
             await this.unwrite()
             i++
             if(i>=this.props.texts.length){

@@ -12,25 +12,29 @@
 
     .cubeWrapper{
 
-        grid-column: span 2;
-        height: calc(100vh - 9.5rem);
+        grid-column: span 1;
         display: grid;
-        place-items: center;
+        margin-top: 2rem;
+        width: 100%;
+        transform: translate(20%,25%);
+        z-index: 1;
 
     }
 
     .childrenWrapper{
 
-        grid-column: span 4;
+        grid-column: 2 / span 5;
         display: flex;
         justify-content: center;
-        height: calc(100vh - 6.5rem);
+        margin-top: 2rem;
+        height: calc(100vh - 8rem);
         overflow-x: hidden;
         overflow-y: scroll;
-        border: 1px solid red;
+        border: 1px solid;
+        border-radius: 6px;
         /* width */
         &::-webkit-scrollbar {
-          width: 12px;
+          width: 0px;
         }
 
         /* Track */
@@ -64,14 +68,19 @@
 
         height: 100%;
         width: 100%;
+        transform: translateX(0) translateY(-2rem);
+        display: flex;
+        justify-content: center;
+
 
     }
 
     .childrenWrapper{
 
         display: flex;
-        height: calc(100vh - 7rem - 110px);
-        margin-top: 1rem;
+        height: calc(100vh - 3rem - 110px);
+        border-color: #454545;
+        transform: translateY(-7rem);
 
         
     }
