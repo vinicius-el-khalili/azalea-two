@@ -29,8 +29,18 @@ const Projects = () => {
                 />
                 <ProjectCard
                     title={"Chess board"}
-                    description={"A functional chess board built with React class components, TypeScript and 'chess.js' library, as a case-study for less declarative implementations of React component functionalities."}
+                    description={"A functional chess board built with React class components, TypeScript and 'chess.js' library.\nUsed as a case-study for imperative implementations of React's basic features, like state management and component's life cycle."}
                     links={{img:"/projects/chess.png",demo:"https://vinicius-el-khalili.github.io/Chess-UI-tsc/",github:"https://github.com/vinicius-el-khalili/Chess-UI-tsc"}}
+                />
+                <ProjectCard
+                    title={"Intersection Observers"}
+                    description={"Implementation of intersection observers and scroll animations using React hooks and TypeScript."}
+                    links={{img:"/projects/reactnn.png",demo:"https://vinicius-el-khalili.github.io/reactnn/",github:"https://github.com/vinicius-el-khalili/reactnn"}}
+                />
+                <ProjectCard
+                    title={"Strange Attractors"}
+                    description={"This was my very first project with no tutorials using HTML, CSS and vanilla JavaScript!\nIt features numerical simulations of strange attractors that are displayed on a canvas element.\nThe whole code was written on a single file.\nNo frameworks, no libraries, only good old JavaScript in it's natural habitat."}
+                    links={{img:"/projects/attractors.png",demo:"https://vinicius-el-khalili.github.io/attractors/",github:"https://raw.githubusercontent.com/vinicius-el-khalili/attractors/main/index.html"}}
                 />
             </div>
         
