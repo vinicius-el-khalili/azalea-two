@@ -13,7 +13,7 @@ const warmOrange = ["#454545","#FFE6C7","#FFA559","#FF6000"]
 const pdfRed = ["#BA274A","#F9F5EB","#E4DCCF"]
 const deepBlue = ["#47597E","#DBE6FD","#293B5F"]
 
-const steveReich = ["white","#8BF5FA","#F8F988","#FFDCA9","#B3FFAE","#B1AFFF"]
+const steveReich = ["white","#8BF5FA","#B1AFFF","#FFDCA9","#B3FFAE","#F8F988"]
 
 // --------- CUBE --------- //
 

@@ -5,7 +5,7 @@ import AppContext from "@/context/AppContext";
 const LayoutContainer = ({children}) => {
     const context = useContext(AppContext)
     return (
-        <>
+        <div className={style.rootLayout}>
         
         <div
         className={style.layoutContainer}
@@ -14,7 +14,7 @@ const LayoutContainer = ({children}) => {
             {children}
         </div>
         
-        </>
+        </div>
     );
 }
  

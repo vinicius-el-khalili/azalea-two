@@ -1,9 +1,15 @@
+.rootLayout{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
 .layoutContainer{
 
     height: calc(100vh - 2rem);
     padding: 1rem;
     margin: 1rem;
     position: relative;
-    overflow: hidden;
 
 }
