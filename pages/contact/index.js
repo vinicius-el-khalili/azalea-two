@@ -6,7 +6,6 @@ const Contact = () => {
         
         <div className={style.layout}>
 
-            <h1>Contact</h1>
         </div>
         
         </>

@@ -4,7 +4,6 @@ const About = () => {
     return ( 
     <div className={style.layout}>
 
-        <h1>About</h1>
 
     </div> );
 }
