@@ -1,0 +1,16 @@
+.AboutLayout{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+    .childrenContainer{
+        width: 100%;
+        height: calc(100vh - 20rem);
+        background-color: green;
+    }
+    .plants>div{
+        position: relative;
+        height: 250px;
+        z-index: 2;
+        border: 1px solid black;
+    }
+}
