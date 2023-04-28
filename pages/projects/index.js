@@ -13,13 +13,18 @@ const Projects = () => {
         
             <div className={style.projectCards}>
                 <ProjectCard
+                    title={"Macumba Jukebox"}
+                    description={"[ In production... ]\nA real-life application of a jukebox system for a brewery. Built with Next.js, FastAPI and ElasticSearch."}
+                    links={{img:"/projects/macumba.png",demo:"https://jukebox-dev-r9xp2.vercel.app/profile"}}
+                />               
+                <ProjectCard
                     title={"Recipe App"}
                     description={"A website that displays different dish recipes and categories. The recipes are stored at a Contentful database, a user-friendly headless content management system."}
                     links={{img:"/projects/catatouille.png",demo:"https://the-catatouille.vercel.app",github:"https://github.com/vinicius-el-khalili/catatouille"}}
                 />
                 <ProjectCard
-                    title={"Jukebox"}
-                    description={"A simple jukebox insipired by Spotify elements. Built with Next.js as a case-study for the Context API."}
+                    title={"Jukebox Prototype"}
+                    description={"A jukebox prototype insipired by Spotify elements. Built with Next.js and Context API."}
                     links={{img:"/projects/jukeboxPrototype.png",demo:"https://jukebox-prototype-coral.vercel.app",github:"https://github.com/vinicius-el-khalili/jukebox-prototype"}}
                 />
                 <ProjectCard

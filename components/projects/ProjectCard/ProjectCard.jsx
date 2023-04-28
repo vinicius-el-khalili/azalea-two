@@ -11,15 +11,24 @@ const ProjectCard = ({title,description,links}) => {
                 <Image
                     src={links.img}
                     fill
-                    style={{objectFit:"cover"}}
+                    style={{objectFit:"contain"}}
                 />
             </div>
             <p className={style.description}>{description}</p>
             <div className={style.links}>
+                
+                {links.demo?
+                (
                 <Link className={style.link} href={links.demo}>
                     <p>Demo</p></Link>
+                ):null}
+
+                {links.github?
+                (
                 <Link className={style.link} href={links.github}>
-                    <p>Github</p></Link>
+                    <p>Github</p></Link>    
+                ):null}
+
             </div>
 
         </div>
