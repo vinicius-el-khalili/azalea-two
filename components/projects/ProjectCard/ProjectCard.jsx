@@ -19,7 +19,7 @@ const ProjectCard = ({title,description,links}) => {
                 
                 {links.demo?
                 (
-                <Link className={style.link} href={links.demo}>
+                <Link className={style.link} href={links.demo} target="_blank"> 
                     <p>Demo</p></Link>
                 ):null}
 
