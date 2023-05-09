@@ -12,6 +12,7 @@ const ProjectCard = ({title,description,links}) => {
                     src={links.img}
                     fill
                     style={{objectFit:"contain"}}
+                    alt='title'
                 />
             </div>
             <p className={style.description}>{description}</p>

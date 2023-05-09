@@ -21,6 +21,7 @@ const NeonSVG = ({target,shadowColor}) => {
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        alt={target}
         />
         
         </>
