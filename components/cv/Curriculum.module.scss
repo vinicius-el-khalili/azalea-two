@@ -1,0 +1,54 @@
+.CurriculumWrapper{
+    display: grid;
+    place-items: center;
+    width:50%;
+    padding: 4rem;
+    height: fit-content;
+    width: 100%;
+    @media screen and (max-width:768px) {
+        width: 100%;
+        padding: 1rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.CurriculumSection{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.CurriculumCard{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 6px;
+
+    .period{
+        width: fit-content;
+        border: 1px solid greenyellow;
+        border-radius: 6px;
+        padding: .5rem;
+        font-weight: bolder;   
+    }
+    .activity{
+        font-weight: bolder;
+        font-size: 1.35rem;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .place{
+        font-weight: lighter;
+        padding-left: 1rem;
+    }
+    .description{
+        color: white;
+        margin: 2rem 0 1rem 0;
+    }
+    .link>a{
+        color: white;
+        text-decoration: none;
+    }
+    
+}

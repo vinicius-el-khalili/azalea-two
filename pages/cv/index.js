@@ -1,5 +1,13 @@
+import Curriculum from "@/components/cv/Curriculum";
+
 const CV = () => {
-    return ( <h1>CV</h1> );
+    return (
+        <div>
+        
+        <Curriculum/>
+
+        </div>
+    );
 }
  
 export default CV;

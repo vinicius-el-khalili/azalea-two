@@ -2,7 +2,7 @@ import cubeSCSS from "@/components/cube/cube.module.scss"
 
 // --------- Controllers --------- //
 
-const pages = ["Home","About","Technologies","Projects","Sandbox","Contact"]
+const pages = ["Home","About","Technologies","Projects","CV","Contact"]
 
 // --------- Palettes --------- //
 
