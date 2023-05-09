@@ -53,10 +53,5 @@ export const curriculumContent = [
         place:"ETEC Tiquatira",
         description:"In this course, I learned the basics of chemistry and lab practices in the context of industrial applications."
     },
-    {
-        period:"2009-2010",
-        activity:"Photocopy operator",
-        place:"B&N Paperstore",
-        description:"My very first job at a local paperstore. I was responsible for taking care of the store, operating a photocopy machine and attending the public. We shall never forget our roots :)"
-    },
+    
 ]
