@@ -1,8 +1,13 @@
 import Image from "next/image";
 import style from "./about.module.scss"
-import ProfilePicture from "@/components/about/AboutLayout/Azalea";
+import { useContext,useEffect } from "react";
+import AppContext from "@/context/AppContext";
 
 const About = () => {
+    const context = useContext(AppContext)
+    useEffect(()=>{
+        context.setPage("About")
+    },[])
     return (
         <div className={style.About}>
         

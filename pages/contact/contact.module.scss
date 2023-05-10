@@ -1,8 +1,13 @@
 .ContactWrapper{
-    display: grid;
-    place-items: center;
-    div{
-        color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    h1{
+        margin-bottom: .5rem;
+        width: 100%;
+        font-size: 4rem;
+        color: #F8F988;
     }
 }
 
@@ -14,6 +19,7 @@
         margin-bottom: .5rem;
         text-align: center;
         width: 100%;
+        font-size: 4rem;
         color: #F8F988;
     }
     div{
@@ -21,5 +27,16 @@
         align-items: center;
         justify-content: center;
         gap: 4px;
+        cursor: pointer;
+        
+    }
+    .link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        color: white;
+        text-decoration: none;
+        padding-top: 5px;
     }
 }

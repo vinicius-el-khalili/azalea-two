@@ -1,11 +1,15 @@
 import style from './Home.module.scss'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import AppContext from '@/context/AppContext'
 
 import TypedWords from '@/components/typedWords/typedWords' 
 
 export default function Home() {
   const context = useContext(AppContext)
+  useEffect(()=>{
+    context.setPage("Home")
+  },[])
+
   return (
 
     <div className={style.mainContainer}>
