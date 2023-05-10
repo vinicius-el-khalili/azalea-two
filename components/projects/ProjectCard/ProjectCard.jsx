@@ -21,13 +21,13 @@ const ProjectCard = ({title,description,links}) => {
                 {links.demo?
                 (
                 <Link className={style.link} href={links.demo} target="_blank"> 
-                    <Image src={"/projects/link.svg"} width={22} height={22}/>
+                    <Image src={"/projects/link.svg"} width={22} height={22} alt='link'/>
                     <p>Demo</p>
                 </Link>
                 ):
                 (
                 <div className={style.link}>
-                <Image className={style.spinning} src={"/projects/gear.svg"} width={22} height={22}/>
+                <Image className={style.spinning} src={"/projects/gear.svg"} width={22} height={22} alt='gear'/>
                 <p className={style.link}>Under development</p>
                 </div>
                 )
@@ -36,7 +36,7 @@ const ProjectCard = ({title,description,links}) => {
                 {links.github?
                 (
                 <Link className={style.link} href={links.github}>
-                    <Image src={"/projects/github.svg"} width={25} height={25}/>
+                    <Image src={"/projects/github.svg"} width={25} height={25} alt='github'/>
                     <p>Github</p></Link>    
                 ):null}
 
