@@ -13,8 +13,8 @@ const Projects = () => {
         
             <div className={style.projectCards}>
                 <ProjectCard
-                    title={"Macumba Jukebox"}
-                    description={"A real-life application of a jukebox system for a brewery restaurant. Built with Next.js, FastAPI and ElasticSearch."}
+                    title={"Jukebox System"}
+                    description={"A real-life application of a jukebox system for the Macumba brewery store (Araraquara-SP). My role is to build and implement an user interface with Figma/Next.js and connect the system to an external API built with FastAPI and ElasticSearch."}
                     links={{img:"/projects/macumba.png"}}
                 />               
                 <ProjectCard

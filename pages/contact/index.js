@@ -15,10 +15,12 @@ const Contact = () => {
             <h1>Get in touch</h1>
             <div className={style.info}>
 
-                <div>
-                    <div onClick={() => {
-                        navigator.clipboard.writeText("velkhaliliborsato@gmail.com")
-                    }}>
+                <div
+                onClick={() => {
+                    navigator.clipboard.writeText("velkhaliliborsato@gmail.com")
+                }}
+                >
+                    <div>
                         <Image 
                         src={"/contact/email.svg"} 
                         width={25} 

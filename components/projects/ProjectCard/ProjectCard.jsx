@@ -21,14 +21,22 @@ const ProjectCard = ({title,description,links}) => {
                 {links.demo?
                 (
                 <Link className={style.link} href={links.demo} target="_blank"> 
-                    <p>Demo</p></Link>
+                    <Image src={"/projects/link.svg"} width={22} height={22}/>
+                    <p>Demo</p>
+                </Link>
                 ):
-                (<p className={style.link}>In development...</p>)
+                (
+                <div className={style.link}>
+                <Image className={style.spinning} src={"/projects/gear.svg"} width={22} height={22}/>
+                <p className={style.link}>Under development</p>
+                </div>
+                )
                 }
 
                 {links.github?
                 (
                 <Link className={style.link} href={links.github}>
+                    <Image src={"/projects/github.svg"} width={25} height={25}/>
                     <p>Github</p></Link>    
                 ):null}
 
