@@ -22,7 +22,9 @@ const ProjectCard = ({title,description,links}) => {
                 (
                 <Link className={style.link} href={links.demo} target="_blank"> 
                     <p>Demo</p></Link>
-                ):null}
+                ):
+                (<p className={style.link}>In development...</p>)
+                }
 
                 {links.github?
                 (

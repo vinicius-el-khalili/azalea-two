@@ -15,7 +15,7 @@ const Projects = () => {
                 <ProjectCard
                     title={"Macumba Jukebox"}
                     description={"A real-life application of a jukebox system for a brewery restaurant. Built with Next.js, FastAPI and ElasticSearch."}
-                    links={{img:"/projects/macumba.png",demo:"https://jukebox-dev-r9xp2.vercel.app/profile"}}
+                    links={{img:"/projects/macumba.png"}}
                 />               
                 <ProjectCard
                     title={"Recipe App"}
