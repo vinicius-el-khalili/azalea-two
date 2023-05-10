@@ -2,6 +2,7 @@
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
+    background-color: palegreen;
     .childrenContainer{
         width: 100%;
         height: calc(100vh - 20rem);
