@@ -20,7 +20,7 @@ const Projects = () => {
                 <ProjectCard
                     title={"Recipe App"}
                     description={"A case-study application that displays different dish recipes and categories. The recipes are stored at a Contentful database, a user-friendly headless content management system."}
-                    links={{img:"/projects/catatouille.png",demo:"https://the-catatouille.vercel.app",github:"https://github.com/vinicius-el-khalili/catatouille"}}
+                    links={{img:"/projects/thecatatouille.png",demo:"https://the-catatouille.vercel.app",github:"https://github.com/vinicius-el-khalili/catatouille"}}
                 />
                 <ProjectCard
                     title={"Jukebox Prototype"}
@@ -30,7 +30,7 @@ const Projects = () => {
                 <ProjectCard
                     title={"Responsive Layouts"}
                     description={"Implementation of case-study responsive layouts with Next.js and SASS."}
-                    links={{img:"/projects/layouts.jpg",demo:"https://github.com/vinicius-el-khalili/Layouts",github:"https://github.com/vinicius-el-khalili/Layouts"}}
+                    links={{img:"/projects/layouts.png",demo:"https://layouts-hazel.vercel.app",github:"https://github.com/vinicius-el-khalili/Layouts"}}
                 />
                 <ProjectCard
                     title={"Chess board"}
