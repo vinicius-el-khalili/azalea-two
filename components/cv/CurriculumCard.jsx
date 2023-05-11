@@ -1,6 +1,6 @@
 import style from "./Curriculum.module.scss"
 
-const CurriculumCard = ({period, activity, place, description}) => {
+const CurriculumCard = ({period, activity, place, description, link}) => {
     return (
         <div className={style.CurriculumCard}>
             <div className={style.period}>
@@ -15,11 +15,14 @@ const CurriculumCard = ({period, activity, place, description}) => {
             <div className={style.description}>
                 {description}
             </div>
-            <div className={style.link}>
-                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                    Check out
-                </a>
-            </div>
+            {
+                link?
+                (<div className={style.link}>
+                    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        Check out
+                    </a>
+                </div>):null
+            }
         </div>
     );
 }
