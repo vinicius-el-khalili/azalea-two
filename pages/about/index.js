@@ -20,7 +20,7 @@ const About = () => {
             </div>
             <div>
                 <h1>Hello, there!</h1>
-                <p>My name is <span>Vinicius</span>.<br/> <p></p> I'm a web developer.<p></p> I'm passionate for learning, implementing and creating interdisciplinary solutions for interdisciplinary problems. </p>
+                <p>My name is <span>Vinicius</span>.<br/>I'm a web developer.<p></p> I'm passionate for learning, implementing and creating interdisciplinary solutions for interdisciplinary problems. </p>
                 <p>Here you'll find more about my skills, background and previous experiences.</p>
 
             </div>
