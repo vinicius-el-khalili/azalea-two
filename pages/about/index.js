@@ -1,7 +1,9 @@
 import Image from "next/image";
-import style from "./about.module.scss"
-import { useContext,useEffect } from "react";
 import AppContext from "@/context/AppContext";
+import { useContext,useEffect } from "react";
+
+import style from "./about.module.scss"
+import ProfilePicture from "@/components/profilePicture/ProfilePicture2";
 
 const About = () => {
     const context = useContext(AppContext)
@@ -12,16 +14,13 @@ const About = () => {
         <div className={style.About}>
         
             <div className={style.profilePicture}>
-               <Image 
-               src={"/about/azalea.svg"}
-               width={180}
-               height={180}
-               alt="v"
-               />
+                
+                <ProfilePicture size={150}/>
+                
             </div>
             <div>
                 <h1>Hello, there!</h1>
-                <p>My name is Vinicius. I'm a web developer, physicist, artist and passionate for learning, implementing and creating interdisciplinary solutions for interdisciplinary problems. </p>
+                <p>My name is <span>Vinicius</span>.<br/> <p></p> I'm a web developer, physicist, artist and human. <p></p> I'm passionate for learning, implementing and creating interdisciplinary solutions for interdisciplinary problems. </p>
                 <p>Here you'll find more about my skills, background and previous experiences.</p>
 
             </div>

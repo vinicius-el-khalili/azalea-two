@@ -1,28 +1,39 @@
 .About{
     width: 100%;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 350px;
+    max-width: 450px;
+    margin-top: 6rem;
+    height: 100%;
+
+    @media screen and (min-width:450px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
 
     div{
+        padding: 0 2rem 0 2rem;
+        font-size: 1.25rem;
+        line-height: 1.6rem;
         h1{
             color: #8BF5FA;
-            padding-bottom: 1rem;
+            padding-bottom: 2rem;
+            line-height: 2.5rem;
+
         }
         p{
             padding-bottom: .5rem;
         }
+        span{
+            color:#8BF5FA
+        }
     }
 }
 .profilePicture{
-    border-radius: 100%;
-    border-color: red;
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    place-items: center;
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
 }
