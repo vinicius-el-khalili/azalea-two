@@ -19,8 +19,9 @@ const About = () => {
                 
             </div>
             <div>
+                
                 <h1>Hello, there!</h1>
-                <p>My name is <span>Vinicius</span>.I'm a web developer.<br/>I'm passionate by learning, implementing and creating interdisciplinary solutions for interdisciplinary problems.</p>
+                <p>My name is <span>Vinicius</span>. I'm a web developer.<br/>I'm passionate by learning, implementing and creating interdisciplinary solutions for interdisciplinary problems.</p>
                 <p>Here you'll find more about my skills, background and previous experiences.</p>
 
             </div>
