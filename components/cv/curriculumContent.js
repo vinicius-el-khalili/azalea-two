@@ -2,7 +2,7 @@ export const curriculumContent = [
     {
         period:"2023 - Current",
         activity:"Front end engineer",
-        place:"Macumba Brewery Store - Freelance",
+        place:"Macumba Brewery Store",
         description:"Development of an internal jukebox system controller for music playlists that can be accessed/modified by customers of a local brewery store."
     },
     {

@@ -14,7 +14,7 @@ const Projects = () => {
             <div className={style.projectCards}>
                 <ProjectCard
                     title={"Jukebox System"}
-                    description={"A real-life application of a jukebox system for the Macumba brewery store (Araraquara-SP). My role is to build and implement an user interface with Figma/Next.js and connect the system to an external API built with FastAPI and ElasticSearch."}
+                    description={"A real-life application of a jukebox system for the Macumba brewery store (Ribeirão Preto-SP). My role is to design and implement user interfaces with Next.js and connect the system to an external API provided by the back-end team. The system allows costumers to login and select the songs that will be played at the stablishment, as well as other administrative functionalities."}
                     links={{img:"/projects/macumba.png"}}
                 />               
                 <ProjectCard
